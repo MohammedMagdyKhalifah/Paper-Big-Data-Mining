@@ -1,0 +1,1008 @@
+{
+  "arabic_text_auth": {
+    "input": {
+      "text": "رمز التحقق ما يوصلني على الجوال وما أقدر أسجل دخول"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "رمز التحقق ما يوصلني على الجوال وما أقدر أسجل دخول"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9865,
+        "category": "AUTH",
+        "category_score": 0.9083,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "unknown",
+        "systems": [],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": []
+    }
+  },
+  "arabic_text_praise": {
+    "input": {
+      "text": "تطبيق رائع وسهل الاستخدام شكراً لكم"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "not_complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "تطبيق رائع وسهل الاستخدام شكراً لكم"
+      },
+      "prediction": {
+        "is_complaint": false,
+        "complaint_score": 0.0574,
+        "category": null,
+        "category_score": null,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "unknown",
+        "systems": [],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": []
+    }
+  },
+  "mixed_ar_en": {
+    "input": {
+      "text": "الـ OTP ما يوصلني when I try to login في تطبيق Absher"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "الـ OTP ما يوصلني when I try to login في تطبيق Absher"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9876,
+        "category": "AUTH",
+        "category_score": 0.9072,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "identified",
+        "systems": [
+          {
+            "system_id": "absher",
+            "name_ar": "أبشر",
+            "name_en": "Absher",
+            "mentions": [
+              {
+                "text": "Absher",
+                "start": 47,
+                "end": 53,
+                "basis": "registered_alias"
+              }
+            ]
+          }
+        ],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": []
+    }
+  },
+  "negated_problem": {
+    "input": {
+      "text": "ما فيه أي مشكلة في الدفع، كل شيء تمام"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "not_complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "ما فيه أي مشكلة في الدفع، كل شيء تمام"
+      },
+      "prediction": {
+        "is_complaint": false,
+        "complaint_score": 0.0616,
+        "category": null,
+        "category_score": null,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "unknown",
+        "systems": [],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": []
+    }
+  },
+  "historical_resolved": {
+    "input": {
+      "text": "كانت عندي مشكلة في الدخول على تطبيق صحتي بس انحلت بعد التحديث، شكراً"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "كانت عندي مشكلة في الدخول على تطبيق صحتي بس انحلت بعد التحديث، شكراً"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.7516,
+        "category": "AUTH",
+        "category_score": 0.6597,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "identified",
+        "systems": [
+          {
+            "system_id": "sehhaty",
+            "name_ar": "صحتي",
+            "name_en": "Sehhaty",
+            "mentions": [
+              {
+                "text": "صحتي",
+                "start": 36,
+                "end": 40,
+                "basis": "ambiguous_name+context_cue:تطبيق"
+              }
+            ]
+          }
+        ],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": []
+    }
+  },
+  "ordinary_word_not_system": {
+    "input": {
+      "text": "ابشر يا أخوي، توكلنا على الله والتطبيق صار أسرع"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "not_complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "ابشر يا أخوي، توكلنا على الله والتطبيق صار أسرع"
+      },
+      "prediction": {
+        "is_complaint": false,
+        "complaint_score": 0.0591,
+        "category": null,
+        "category_score": null,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "ambiguous",
+        "systems": [],
+        "possible_mentions": [
+          {
+            "system_id": "absher",
+            "text": "ابشر",
+            "start": 0,
+            "end": 4,
+            "reason": "ambiguous name without context (also an ordinary word)"
+          }
+        ],
+        "generic_references": [
+          {
+            "text": "التطبيق",
+            "start": 31,
+            "end": 38
+          }
+        ],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": [
+        "A registered system name appears only as an ordinary word without context: not identified."
+      ]
+    }
+  },
+  "unknown_system": {
+    "input": {
+      "text": "تطبيق سهل للمواصلات يطلع لي خطأ كل ما أحاول أدفع"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "تطبيق سهل للمواصلات يطلع لي خطأ كل ما أحاول أدفع"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9816,
+        "category": "TRANS",
+        "category_score": 0.8908,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "unknown",
+        "systems": [],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": []
+    }
+  },
+  "multiple_systems": {
+    "input": {
+      "text": "منصة ناجز تطلب التحقق عن طريق النفاذ الوطني الموحد وتطبيق نفاذ ما يفتح"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": false,
+        "text_source": "user_text",
+        "classified_text": "منصة ناجز تطلب التحقق عن طريق النفاذ الوطني الموحد وتطبيق نفاذ ما يفتح"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9875,
+        "category": "AUTH",
+        "category_score": 0.8735,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "identified",
+        "systems": [
+          {
+            "system_id": "najiz",
+            "name_ar": "ناجز",
+            "name_en": "Najiz",
+            "mentions": [
+              {
+                "text": "ناجز",
+                "start": 5,
+                "end": 9,
+                "basis": "ambiguous_name+context_cue:منصه"
+              }
+            ]
+          },
+          {
+            "system_id": "nafath",
+            "name_ar": "نفاذ",
+            "name_en": "Nafath",
+            "mentions": [
+              {
+                "text": "النفاذ الوطني الموحد",
+                "start": 30,
+                "end": 50,
+                "basis": "registered_alias"
+              },
+              {
+                "text": "نفاذ",
+                "start": 58,
+                "end": 62,
+                "basis": "ambiguous_name+context_cue:وتطبيق"
+              }
+            ]
+          }
+        ],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": null,
+      "notes": []
+    }
+  },
+  "error_screen_image_only": {
+    "input": {
+      "image": "err00.png"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "error_screen_signal",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": "ocr",
+        "classified_text": "أبشر\nحدث خطأ غير متوقع\nعذراً، حدث خطأ أثناء معالجة طلبك\nيرجى المحاولة لاحقاً.\nرمز الخطأ: 500\nحسناً"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9787,
+        "category": "TRANS",
+        "category_score": 0.4085,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "ambiguous",
+        "systems": [],
+        "possible_mentions": [
+          {
+            "system_id": "absher",
+            "text": "أبشر",
+            "start": 0,
+            "end": 4,
+            "reason": "ambiguous name without context (also an ordinary word)"
+          }
+        ],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [
+          {
+            "text": "حدث خطأ",
+            "start": 5,
+            "end": 12,
+            "cue": "حدث خطا"
+          },
+          {
+            "text": "عذرا",
+            "start": 23,
+            "end": 27,
+            "cue": "عذرا"
+          },
+          {
+            "text": "حدث خطأ",
+            "start": 30,
+            "end": 37,
+            "cue": "حدث خطا"
+          },
+          {
+            "text": "يرجى المحاولة",
+            "start": 56,
+            "end": 69,
+            "cue": "يرجي المحاوله"
+          },
+          {
+            "text": "رمز الخطأ",
+            "start": 78,
+            "end": 87,
+            "cue": "رمز الخطا"
+          }
+        ],
+        "narrative_markers": [],
+        "needs_user_context": true,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "ok",
+        "text": "أبشر\nحدث خطأ غير متوقع\nعذراً، حدث خطأ أثناء معالجة طلبك\nيرجى المحاولة لاحقاً.\nرمز الخطأ: 500\nحسناً",
+        "mean_confidence": 0.9167,
+        "low_confidence": false,
+        "error": null,
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": {
+          "format": "PNG",
+          "width": 1000,
+          "height": 2000
+        },
+        "elapsed_ms": 116.3,
+        "corrected_text": null,
+        "used_for_classification": "ocr"
+      },
+      "notes": [
+        "Screenshot of an error message without the user's own description: the model output is attached, but the screen alone does not say what the user was doing; ask for context.",
+        "A registered system name appears only as an ordinary word without context: not identified."
+      ]
+    }
+  },
+  "error_screen_with_user_text": {
+    "input": {
+      "text": "من أمس ما أقدر أجدد الهوية",
+      "image": "err00.png"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": true,
+        "has_image": true,
+        "text_source": "user_text+ocr",
+        "classified_text": "من أمس ما أقدر أجدد الهوية\nأبشر\nحدث خطأ غير متوقع\nعذراً، حدث خطأ أثناء معالجة طلبك\nيرجى المحاولة لاحقاً.\nرمز الخطأ: 500\nحسناً"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9835,
+        "category": "TRANS",
+        "category_score": 0.8677,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "ambiguous",
+        "systems": [],
+        "possible_mentions": [
+          {
+            "system_id": "absher",
+            "text": "أبشر",
+            "start": 27,
+            "end": 31,
+            "reason": "ambiguous name without context (also an ordinary word)"
+          }
+        ],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [
+          {
+            "text": "حدث خطأ",
+            "start": 32,
+            "end": 39,
+            "cue": "حدث خطا"
+          },
+          {
+            "text": "عذرا",
+            "start": 50,
+            "end": 54,
+            "cue": "عذرا"
+          },
+          {
+            "text": "حدث خطأ",
+            "start": 57,
+            "end": 64,
+            "cue": "حدث خطا"
+          },
+          {
+            "text": "يرجى المحاولة",
+            "start": 83,
+            "end": 96,
+            "cue": "يرجي المحاوله"
+          },
+          {
+            "text": "رمز الخطأ",
+            "start": 105,
+            "end": 114,
+            "cue": "رمز الخطا"
+          }
+        ],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "ok",
+        "text": "أبشر\nحدث خطأ غير متوقع\nعذراً، حدث خطأ أثناء معالجة طلبك\nيرجى المحاولة لاحقاً.\nرمز الخطأ: 500\nحسناً",
+        "mean_confidence": 0.9167,
+        "low_confidence": false,
+        "error": null,
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": {
+          "format": "PNG",
+          "width": 1000,
+          "height": 2000
+        },
+        "elapsed_ms": 109.9,
+        "corrected_text": null,
+        "used_for_classification": "ocr"
+      },
+      "notes": [
+        "A registered system name appears only as an ordinary word without context: not identified."
+      ]
+    }
+  },
+  "english_error_image": {
+    "input": {
+      "image": "err06.png"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "error_screen_signal",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": "ocr",
+        "classified_text": "Something went wrong\nPlease try again later. (Error 503)\nOK"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9855,
+        "category": "AVAIL",
+        "category_score": 0.8981,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "unknown",
+        "systems": [],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [
+          {
+            "text": "Something went wrong",
+            "start": 0,
+            "end": 20,
+            "cue": "something went wrong"
+          },
+          {
+            "text": "try again",
+            "start": 28,
+            "end": 37,
+            "cue": "try again"
+          },
+          {
+            "text": "Error",
+            "start": 46,
+            "end": 51,
+            "cue": "error"
+          }
+        ],
+        "narrative_markers": [],
+        "needs_user_context": true,
+        "ocr_needs_review": true
+      },
+      "ocr": {
+        "status": "ok",
+        "text": "Something went wrong\nPlease try again later. (Error 503)\nOK",
+        "mean_confidence": 0.3667,
+        "low_confidence": true,
+        "error": null,
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": {
+          "format": "PNG",
+          "width": 1000,
+          "height": 2000
+        },
+        "elapsed_ms": 108.4,
+        "corrected_text": null,
+        "used_for_classification": "ocr"
+      },
+      "notes": [
+        "Screenshot of an error message without the user's own description: the model output is attached, but the screen alone does not say what the user was doing; ask for context.",
+        "OCR confidence is low: show the extracted text to the user for correction."
+      ]
+    }
+  },
+  "complaint_chat_image": {
+    "input": {
+      "image": "chat03.png"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": "ocr",
+        "classified_text": "المحادثة\nحاولت أجدد الإقامة من أبشر وانخصم المبلغ مرتين\nوالطلب ما تم!"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9755,
+        "category": "TRANS",
+        "category_score": 0.8956,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "ambiguous",
+        "systems": [],
+        "possible_mentions": [
+          {
+            "system_id": "absher",
+            "text": "أبشر",
+            "start": 31,
+            "end": 35,
+            "reason": "ambiguous name without context (also an ordinary word)"
+          }
+        ],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [
+          "حاولت"
+        ],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "ok",
+        "text": "المحادثة\nحاولت أجدد الإقامة من أبشر وانخصم المبلغ مرتين\nوالطلب ما تم!",
+        "mean_confidence": 1.0,
+        "low_confidence": false,
+        "error": null,
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": {
+          "format": "PNG",
+          "width": 1000,
+          "height": 2000
+        },
+        "elapsed_ms": 106.0,
+        "corrected_text": null,
+        "used_for_classification": "ocr"
+      },
+      "notes": [
+        "A registered system name appears only as an ordinary word without context: not identified."
+      ]
+    }
+  },
+  "degraded_jpeg_image": {
+    "input": {
+      "image": "chat05_degraded.jpg"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "complaint",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": "ocr",
+        "classified_text": "المحادثة\nنفاذ ما يرسل إشعار التحقق\nوناجز يطلب التحقق عن طريق نفاذ فما أقدر أدخل"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9869,
+        "category": "AUTH",
+        "category_score": 0.9096,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "ambiguous",
+        "systems": [],
+        "possible_mentions": [
+          {
+            "system_id": "nafath",
+            "text": "نفاذ",
+            "start": 9,
+            "end": 13,
+            "reason": "ambiguous name without context (also an ordinary word)"
+          },
+          {
+            "system_id": "najiz",
+            "text": "ناجز",
+            "start": 36,
+            "end": 40,
+            "reason": "ambiguous name without context (also an ordinary word)"
+          },
+          {
+            "system_id": "nafath",
+            "text": "نفاذ",
+            "start": 61,
+            "end": 65,
+            "reason": "ambiguous name without context (also an ordinary word)"
+          }
+        ],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [
+          "ما اقدر",
+          "اقدر"
+        ],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "ok",
+        "text": "المحادثة\nنفاذ ما يرسل إشعار التحقق\nوناجز يطلب التحقق عن طريق نفاذ فما أقدر أدخل",
+        "mean_confidence": 1.0,
+        "low_confidence": false,
+        "error": null,
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": {
+          "format": "JPEG",
+          "width": 600,
+          "height": 1200
+        },
+        "elapsed_ms": 88.4,
+        "corrected_text": null,
+        "used_for_classification": "ocr"
+      },
+      "notes": [
+        "A registered system name appears only as an ordinary word without context: not identified."
+      ]
+    }
+  },
+  "no_text_image": {
+    "input": {
+      "image": "notext0.png"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "no_text",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": null,
+        "classified_text": null
+      },
+      "prediction": null,
+      "systems": null,
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "empty",
+        "text": "",
+        "mean_confidence": null,
+        "low_confidence": false,
+        "error": null,
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": {
+          "format": "PNG",
+          "width": 1000,
+          "height": 2000
+        },
+        "elapsed_ms": 106.4,
+        "corrected_text": null,
+        "used_for_classification": null
+      },
+      "notes": [
+        "No readable text: nothing was classified."
+      ]
+    }
+  },
+  "corrupt_image": {
+    "input": {
+      "image": "corrupt.png"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "ocr_failed",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": null,
+        "classified_text": null
+      },
+      "prediction": null,
+      "systems": null,
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "failed",
+        "text": "",
+        "mean_confidence": null,
+        "low_confidence": false,
+        "error": {
+          "code": "unreadable_image",
+          "message": "cannot decode image: cannot identify image file <_io.BytesIO object at 0x16fbe2fc0>"
+        },
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": null,
+        "elapsed_ms": 21.8,
+        "corrected_text": null,
+        "used_for_classification": null
+      },
+      "notes": [
+        "OCR failed (unreadable_image): nothing was classified."
+      ]
+    }
+  },
+  "unsupported_gif": {
+    "input": {
+      "image": "tiny.gif"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "ocr_failed",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": null,
+        "classified_text": null
+      },
+      "prediction": null,
+      "systems": null,
+      "signals": {
+        "error_message_cues": [],
+        "narrative_markers": [],
+        "needs_user_context": false,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "failed",
+        "text": "",
+        "mean_confidence": null,
+        "low_confidence": false,
+        "error": {
+          "code": "unsupported_format",
+          "message": "format 'GIF' not supported; use PNG or JPEG"
+        },
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": null,
+        "elapsed_ms": 0.2,
+        "corrected_text": null,
+        "used_for_classification": null
+      },
+      "notes": [
+        "OCR failed (unsupported_format): nothing was classified."
+      ]
+    }
+  },
+  "ocr_corrected_text": {
+    "input": {
+      "image": "err03.png",
+      "corrected_text": "منصة نفاذ: رمز التحقق غير صحيح"
+    },
+    "output": {
+      "schema_version": "p1-analysis-v1",
+      "analysis_kind": "error_screen_signal",
+      "input": {
+        "has_user_text": false,
+        "has_image": true,
+        "text_source": "ocr_corrected",
+        "classified_text": "منصة نفاذ: رمز التحقق غير صحيح"
+      },
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9855,
+        "category": "AUTH",
+        "category_score": 0.906,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems": {
+        "status": "identified",
+        "systems": [
+          {
+            "system_id": "nafath",
+            "name_ar": "نفاذ",
+            "name_en": "Nafath",
+            "mentions": [
+              {
+                "text": "نفاذ",
+                "start": 5,
+                "end": 9,
+                "basis": "ambiguous_name+context_cue:منصه"
+              }
+            ]
+          }
+        ],
+        "possible_mentions": [],
+        "generic_references": [],
+        "registry_version": "1.1",
+        "method": "registry rules v1 (explicit names only; not a diagnosis)"
+      },
+      "signals": {
+        "error_message_cues": [
+          {
+            "text": "غير صحيح",
+            "start": 22,
+            "end": 30,
+            "cue": "غير صحيح"
+          }
+        ],
+        "narrative_markers": [],
+        "needs_user_context": true,
+        "ocr_needs_review": false
+      },
+      "ocr": {
+        "status": "ok",
+        "text": "نفاذ\nرمز التحقق غير صحيح\nتبقى لديك محاولتان قبل إيقاف الحساب مؤقتاً\nحسناً",
+        "mean_confidence": 0.875,
+        "low_confidence": false,
+        "error": null,
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "image": {
+          "format": "PNG",
+          "width": 1000,
+          "height": 2000
+        },
+        "elapsed_ms": 106.6,
+        "corrected_text": "منصة نفاذ: رمز التحقق غير صحيح",
+        "used_for_classification": "ocr_corrected"
+      },
+      "notes": [
+        "Screenshot of an error message without the user's own description: the model output is attached, but the screen alone does not say what the user was doing; ask for context."
+      ]
+    }
+  }
+}

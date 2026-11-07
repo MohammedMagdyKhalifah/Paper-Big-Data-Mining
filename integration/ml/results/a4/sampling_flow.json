@@ -1,0 +1,38 @@
+{
+  "pool": 17380,
+  "pool_lex_trans": 1293,
+  "pool_lex_ux": 526,
+  "pool_code_switch": 126,
+  "holdout": {
+    "random": 900,
+    "enr_ux": 150,
+    "enr_trans": 150,
+    "enr_codeswitch": 40
+  },
+  "holdout_domain": {
+    "gov": 619,
+    "consumer_other": 466,
+    "commerce_delivery": 113,
+    "utility": 24,
+    "finance": 9,
+    "telecom": 9
+  },
+  "train_expansion": {
+    "random": 1800,
+    "enr_trans": 700,
+    "random_topup": 570,
+    "model_uncertain_gate": 350,
+    "enr_ux": 276,
+    "model_pred_trans_ux": 244,
+    "enr_codeswitch": 60
+  },
+  "train_expansion_domain": {
+    "gov": 1653,
+    "consumer_other": 1567,
+    "commerce_delivery": 577,
+    "utility": 136,
+    "telecom": 54,
+    "finance": 13
+  },
+  "holdout_ids_sha256": "65fb9459108967c211e1fec0a4caa19b1629cc6368f5f34055670f4cc8bd07f5"
+}

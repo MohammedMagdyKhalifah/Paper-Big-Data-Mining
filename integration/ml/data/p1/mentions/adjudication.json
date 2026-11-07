@@ -1,0 +1,48 @@
+{
+"meta": {
+"adjudicator_model": "opus",
+"blind": "saw text + anonymised, shuffled annotator labels only",
+"provenance": "AI-assisted, NOT human gold"
+},
+"labels": [
+{
+"id": "m0007",
+"systems": [
+"gosi"
+],
+"rationale": "The text explicitly writes 'التامينات الاجتماعية' (GOSI, missing hamza), the registry's own name for the system, and compares its mobile e-services with the reviewed app's, so it counts as a named mention."
+},
+{
+"id": "m0187",
+"systems": [
+"tawakkalna"
+],
+"rationale": "'اتركو توكلنا' ('leave Tawakkalna') names the app as the thing to drop, which is a pun on the next phrase 'متوكلين على الله'; the first توكلنا is the app name, not the religious phrase."
+},
+{
+"id": "m0234",
+"systems": [
+"absher",
+"kollona_amn",
+"watani"
+],
+"rationale": "Absher, Watani and Kollona Amn are each written after 'تطبيق' (app) and listed as government apps, so 'تطبيق وطني' names the Watani app rather than meaning 'national'."
+},
+{
+"id": "m0246",
+"systems": [
+"sehhaty",
+"tawakkalna",
+"tetamman"
+],
+"rationale": "In the list of apps 'توكلنا وطمني وصحتي', 'طمني' is a spelling variant of Tetamman (تطمن) with the conjunction و attached, alongside Tawakkalna and Sehhaty used as app names."
+},
+{
+"id": "m0266",
+"systems": [
+"kollona_amn"
+],
+"rationale": "'ممتاز كلنا امن' praises Kollona Amn by name (missing hamza) in a review; the patriotic phrase that follows does not make the opening reference a plain slogan."
+}
+]
+}

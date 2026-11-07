@@ -1,0 +1,13 @@
+{
+  "max_len": 128,
+  "batch_size": 16,
+  "grad_accum": 2,
+  "max_epochs": 6,
+  "patience": 2,
+  "lr": 2e-05,
+  "loss": "ce_sqrt_class_weights",
+  "seed": 42,
+  "model": "UBC-NLP/MARBERTv2@fe88db9",
+  "synthetic": false,
+  "n_train": 4806
+}

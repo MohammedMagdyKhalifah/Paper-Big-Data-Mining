@@ -1,0 +1,11 @@
+{
+  "engine": "easyocr-1.7.2/ar+en/canvas1600",
+  "n_images": 64,
+  "engine_load_s": 5.05,
+  "latency_ms_mean": 1820.8,
+  "latency_ms_p50": 1864.7,
+  "latency_ms_max": 3028.4,
+  "peak_rss_mb": 6347.6,
+  "peak_rss_child_mb": 0.0,
+  "device": "CPU (Apple M2 Max)"
+}

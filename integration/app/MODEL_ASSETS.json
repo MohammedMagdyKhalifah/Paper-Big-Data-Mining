@@ -1,0 +1,18 @@
+{
+  "ml_commit": "a02d2fafd12f96e26795deb7a16458f87e49d5c0",
+  "model_version": "tfidf-baseline-v1",
+  "files": {
+    "ml/artifacts/category.joblib": {
+      "sha256": "010bb935563698660e4a58d4a77588c661d498ada5c9f3dfddf072d5001d683b",
+      "bytes": 2387881
+    },
+    "ml/artifacts/gate.joblib": {
+      "sha256": "c0844da1f95b638faedb7ba035dcaad42c0b83ac337e91d11543cb3ed3469e82",
+      "bytes": 1029764
+    },
+    "ml/artifacts/manifest.json": {
+      "sha256": "bd80539ad9bfd76d2c725eeb1bb0f63eb392102e6292d6a14450cdedc74428ca",
+      "bytes": 3589
+    }
+  }
+}

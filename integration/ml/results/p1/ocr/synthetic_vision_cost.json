@@ -1,0 +1,11 @@
+{
+  "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+  "n_images": 64,
+  "engine_load_s": 0.32,
+  "latency_ms_mean": 128.1,
+  "latency_ms_p50": 124.2,
+  "latency_ms_max": 313.6,
+  "peak_rss_mb": 321.4,
+  "peak_rss_child_mb": 0.0,
+  "device": "CPU (Apple M2 Max)"
+}

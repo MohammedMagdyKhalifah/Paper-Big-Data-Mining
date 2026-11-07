@@ -1,0 +1,91 @@
+{
+  "n": 801,
+  "e2e_macro_f1": 0.6446,
+  "gate_macro_f1": 0.8518,
+  "category_macro_f1": 0.6654,
+  "e2e_accuracy": 0.7653,
+  "per_class_e2e": {
+    "NO": {
+      "precision": 0.9079,
+      "recall": 0.8501,
+      "f1": 0.878,
+      "support": 487
+    },
+    "AUTH": {
+      "precision": 0.7123,
+      "recall": 0.7647,
+      "f1": 0.7376,
+      "support": 68
+    },
+    "AVAIL": {
+      "precision": 0.6848,
+      "recall": 0.7683,
+      "f1": 0.7241,
+      "support": 82
+    },
+    "PERF": {
+      "precision": 0.8571,
+      "recall": 0.75,
+      "f1": 0.8,
+      "support": 8
+    },
+    "TRANS": {
+      "precision": 0.5,
+      "recall": 0.4412,
+      "f1": 0.4688,
+      "support": 34
+    },
+    "UX": {
+      "precision": 0.3556,
+      "recall": 0.4324,
+      "f1": 0.3902,
+      "support": 37
+    },
+    "OTHER": {
+      "precision": 0.4796,
+      "recall": 0.5529,
+      "f1": 0.5137,
+      "support": 85
+    }
+  },
+  "per_class_category": {
+    "AUTH": {
+      "precision": 0.8308,
+      "recall": 0.7941,
+      "f1": 0.812,
+      "support": 68
+    },
+    "AVAIL": {
+      "precision": 0.6957,
+      "recall": 0.7805,
+      "f1": 0.7356,
+      "support": 82
+    },
+    "PERF": {
+      "precision": 0.5833,
+      "recall": 0.875,
+      "f1": 0.7,
+      "support": 8
+    },
+    "TRANS": {
+      "precision": 0.7308,
+      "recall": 0.5588,
+      "f1": 0.6333,
+      "support": 34
+    },
+    "UX": {
+      "precision": 0.5588,
+      "recall": 0.5135,
+      "f1": 0.5352,
+      "support": 37
+    },
+    "OTHER": {
+      "precision": 0.5765,
+      "recall": 0.5765,
+      "f1": 0.5765,
+      "support": 85
+    }
+  },
+  "recall_TRANS": 0.5588,
+  "recall_UX": 0.5135
+}

@@ -1,0 +1,11 @@
+{
+  "engine": "paddleocr-3.7.0/ar",
+  "n_images": 64,
+  "engine_load_s": 10.46,
+  "latency_ms_mean": 6860.8,
+  "latency_ms_p50": 8614.8,
+  "latency_ms_max": 11485.0,
+  "peak_rss_mb": 12606.9,
+  "peak_rss_child_mb": 2.5,
+  "device": "CPU (Apple M2 Max)"
+}

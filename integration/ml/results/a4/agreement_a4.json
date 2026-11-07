@@ -1,0 +1,190 @@
+{
+  "holdout": {
+    "n": 1240,
+    "complaint_kappa": 0.8727349259222691,
+    "joint_kappa": 0.8429273375489064,
+    "joint_pct_agree": 0.9,
+    "category_kappa_both_yes": 0.8803790884925068,
+    "n_adjudicated": 124,
+    "uncertain_rate": 0.3419354838709677,
+    "final_distribution": {
+      "NO": 714,
+      "AVAIL": 151,
+      "OTHER": 120,
+      "AUTH": 104,
+      "UX": 78,
+      "TRANS": 50,
+      "PERF": 14,
+      "UNCLEAR": 9
+    },
+    "by_stratum": {
+      "enr_codeswitch": {
+        "NO": 26,
+        "AVAIL": 5,
+        "AUTH": 4,
+        "OTHER": 3,
+        "TRANS": 2
+      },
+      "enr_trans": {
+        "NO": 98,
+        "TRANS": 22,
+        "UX": 10,
+        "AVAIL": 10,
+        "OTHER": 8,
+        "PERF": 1,
+        "UNCLEAR": 1
+      },
+      "enr_ux": {
+        "NO": 68,
+        "UX": 36,
+        "OTHER": 12,
+        "AVAIL": 11,
+        "TRANS": 9,
+        "AUTH": 9,
+        "PERF": 3,
+        "UNCLEAR": 2
+      },
+      "random": {
+        "NO": 522,
+        "AVAIL": 125,
+        "OTHER": 97,
+        "AUTH": 91,
+        "UX": 32,
+        "TRANS": 17,
+        "PERF": 10,
+        "UNCLEAR": 6
+      }
+    }
+  },
+  "a4_train": {
+    "n": 4000,
+    "complaint_kappa": 0.8706420470641411,
+    "joint_kappa": 0.839214155038787,
+    "joint_pct_agree": 0.903,
+    "category_kappa_both_yes": 0.8789096534893807,
+    "n_adjudicated": 388,
+    "uncertain_rate": 0.33975,
+    "final_distribution": {
+      "NO": 2449,
+      "OTHER": 394,
+      "AVAIL": 361,
+      "AUTH": 311,
+      "UX": 202,
+      "TRANS": 198,
+      "UNCLEAR": 56,
+      "PERF": 29
+    },
+    "by_stratum": {
+      "enr_codeswitch": {
+        "NO": 43,
+        "AVAIL": 6,
+        "AUTH": 5,
+        "OTHER": 3,
+        "TRANS": 1,
+        "UX": 1,
+        "PERF": 1
+      },
+      "enr_trans": {
+        "NO": 461,
+        "TRANS": 102,
+        "OTHER": 43,
+        "AUTH": 30,
+        "UX": 29,
+        "AVAIL": 25,
+        "UNCLEAR": 6,
+        "PERF": 4
+      },
+      "enr_ux": {
+        "NO": 146,
+        "UX": 69,
+        "OTHER": 22,
+        "AVAIL": 16,
+        "AUTH": 15,
+        "TRANS": 5,
+        "PERF": 3
+      },
+      "model_pred_trans_ux": {
+        "NO": 120,
+        "OTHER": 40,
+        "TRANS": 37,
+        "UX": 27,
+        "AVAIL": 10,
+        "AUTH": 5,
+        "UNCLEAR": 3,
+        "PERF": 2
+      },
+      "model_uncertain_gate": {
+        "NO": 241,
+        "OTHER": 47,
+        "AVAIL": 21,
+        "AUTH": 14,
+        "UX": 12,
+        "UNCLEAR": 8,
+        "PERF": 4,
+        "TRANS": 3
+      },
+      "random": {
+        "NO": 999,
+        "AVAIL": 248,
+        "AUTH": 213,
+        "OTHER": 199,
+        "UX": 56,
+        "TRANS": 42,
+        "UNCLEAR": 29,
+        "PERF": 14
+      },
+      "random_topup": {
+        "NO": 439,
+        "OTHER": 40,
+        "AVAIL": 35,
+        "AUTH": 29,
+        "UNCLEAR": 10,
+        "TRANS": 8,
+        "UX": 8,
+        "PERF": 1
+      }
+    }
+  },
+  "synthetic": {
+    "n_generated": 300,
+    "n_verified": 300,
+    "verified_by_kind": {
+      "syn_codeswitch": 1.0,
+      "syn_hard_negative": 1.0,
+      "syn_trans": 1.0,
+      "syn_ux": 1.0
+    }
+  },
+  "v1_rereview": {
+    "n_flagged_train_val": 239,
+    "blind_agreed": 200,
+    "adjudicated": 39,
+    "label_changed": 32,
+    "changes": {
+      "AUTH->NO": 1,
+      "AVAIL->NO": 1,
+      "AVAIL->OTHER": 11,
+      "NO->AUTH": 1,
+      "NO->UNCLEAR": 1,
+      "OTHER->AUTH": 1,
+      "OTHER->NO": 1,
+      "OTHER->TRANS": 1,
+      "OTHER->UNCLEAR": 1,
+      "OTHER->UX": 1,
+      "PERF->AVAIL": 1,
+      "PERF->NO": 2,
+      "TRANS->NO": 1,
+      "UX->AUTH": 1,
+      "UX->NO": 1,
+      "UX->OTHER": 6
+    }
+  },
+  "set_sizes": {
+    "a4_train": 4000,
+    "v1_train": 1399,
+    "holdout": 1240,
+    "v1_test": 301,
+    "v1_val": 300,
+    "synthetic": 300
+  }
+}

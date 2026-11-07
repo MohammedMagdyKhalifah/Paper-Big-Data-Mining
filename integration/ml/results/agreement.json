@@ -1,0 +1,78 @@
+{
+  "overall": {
+    "n": 2000,
+    "complaint_pct_agree": 0.8865,
+    "complaint_kappa": 0.7810412597361884,
+    "joint_pct_agree": 0.8085,
+    "joint_kappa": 0.7129529422698152,
+    "category_n_both_yes": 784,
+    "category_pct_agree": 0.8010204081632653,
+    "category_kappa": 0.7399187246014379
+  },
+  "pilot": {
+    "n": 100,
+    "complaint_pct_agree": 0.85,
+    "complaint_kappa": 0.7403946002076843,
+    "joint_pct_agree": 0.76,
+    "joint_kappa": 0.6691936595451413,
+    "category_n_both_yes": 40,
+    "category_pct_agree": 0.775,
+    "category_kappa": 0.6917808219178083
+  },
+  "main": {
+    "n": 1900,
+    "complaint_pct_agree": 0.888421052631579,
+    "complaint_kappa": 0.783277269508812,
+    "joint_pct_agree": 0.8110526315789474,
+    "joint_kappa": 0.7151413581254873,
+    "category_n_both_yes": 744,
+    "category_pct_agree": 0.8024193548387096,
+    "category_kappa": 0.7415378507334296
+  },
+  "n_adjudicated": 383,
+  "aura_proxy": {
+    "n": 293,
+    "pct_agree": 0.8839590443686007,
+    "kappa": 0.7224451131171292,
+    "crosstab": {
+      "no": {
+        "bug_report": 5,
+        "improvement_request": 60,
+        "others": 65,
+        "rating": 65
+      },
+      "yes": {
+        "bug_report": 69,
+        "improvement_request": 13,
+        "others": 7,
+        "rating": 9
+      }
+    }
+  },
+  "final_distribution": {
+    "NO": 1122,
+    "AVAIL": 259,
+    "OTHER": 221,
+    "AUTH": 194,
+    "UX": 79,
+    "TRANS": 49,
+    "UNCLEAR": 40,
+    "PERF": 36
+  },
+  "blind_audit": {
+    "disagreements": {
+      "n": 120,
+      "auditor_vs_final": 0.8,
+      "auditor_vs_A": 0.775,
+      "auditor_vs_B": 0.15833333333333333,
+      "auditor_vs_final_complaint_only": 0.85
+    },
+    "agreed": {
+      "n": 60,
+      "auditor_vs_final": 0.95,
+      "auditor_vs_A": 0.95,
+      "auditor_vs_B": 0.95,
+      "auditor_vs_final_complaint_only": 0.9666666666666667
+    }
+  }
+}

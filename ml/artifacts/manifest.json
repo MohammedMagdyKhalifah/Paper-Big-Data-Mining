@@ -1,0 +1,111 @@
+{
+  "model_version": "tfidf-baseline-v1",
+  "created_utc": "2026-10-29T21:03:04+00:00",
+  "files": {
+    "gate": "gate.joblib",
+    "category": "category.joblib"
+  },
+  "categories": [
+    "AUTH",
+    "AVAIL",
+    "OTHER",
+    "PERF",
+    "TRANS",
+    "UX"
+  ],
+  "thresholds": {
+    "gate_decision": 0.5,
+    "gate_review_low": 0.4,
+    "gate_review_high": 0.6,
+    "category_review": 0.675,
+    "precision_target": 0.9
+  },
+  "score_semantics": {
+    "complaint_score": "P(technical complaint) from the logistic-regression gate (raw predict_proba)",
+    "category_score": "top-class probability of the sigmoid-calibrated category model (CalibratedClassifierCV over LR or LinearSVC, fitted on train folds)",
+    "needs_review": "gate score inside [gate_review_low, gate_review_high) OR category_score < category_review; thresholds chosen on validation to reach precision_target on automatic decisions"
+  },
+  "selected": {
+    "gate": {
+      "experiment_id": "gate-078",
+      "task": "gate",
+      "preprocessing_variant": "P1",
+      "feature_type": "char25",
+      "min_df": 1,
+      "learner": "lr",
+      "C": 10.0,
+      "class_weight": "balanced",
+      "random_seed": 42,
+      "training_time_s": 0.214,
+      "val_macro_F1": 0.875,
+      "val_min_recall": 0.864,
+      "val_per_class_recall": "{\"0\": 0.888, \"1\": 0.864}"
+    },
+    "category": {
+      "experiment_id": "category-160",
+      "task": "category",
+      "preprocessing_variant": "P1",
+      "feature_type": "char25",
+      "min_df": 2,
+      "learner": "lr_cal",
+      "C": 1.0,
+      "class_weight": "balanced",
+      "random_seed": 42,
+      "training_time_s": 0.434,
+      "val_macro_F1": 0.6004,
+      "val_min_recall": 0.1429,
+      "val_per_class_recall": "{\"AUTH\": 0.793, \"AVAIL\": 0.846, \"PERF\": 0.8, \"TRANS\": 0.143, \"UX\": 0.25, \"OTHER\": 0.636}"
+    }
+  },
+  "dummy_val": {
+    "gate": {
+      "experiment_id": "gate-000",
+      "task": "gate",
+      "preprocessing_variant": "P1",
+      "feature_type": "-",
+      "min_df": 0,
+      "learner": "dummy",
+      "C": null,
+      "class_weight": "none",
+      "random_seed": 42,
+      "training_time_s": 0.041,
+      "val_macro_F1": 0.365,
+      "val_min_recall": 0.0,
+      "val_per_class_recall": "{\"0\": 1.0, \"1\": 0.0}"
+    },
+    "category": {
+      "experiment_id": "category-000",
+      "task": "category",
+      "preprocessing_variant": "P1",
+      "feature_type": "-",
+      "min_df": 0,
+      "learner": "dummy",
+      "C": null,
+      "class_weight": "none",
+      "random_seed": 42,
+      "training_time_s": 0.017,
+      "val_macro_F1": 0.0793,
+      "val_min_recall": 0.0,
+      "val_per_class_recall": "{\"AUTH\": 0.0, \"AVAIL\": 1.0, \"PERF\": 0.0, \"TRANS\": 0.0, \"UX\": 0.0, \"OTHER\": 0.0}"
+    }
+  },
+  "calibration": {
+    "gate_brier_val": 0.0972691699578803,
+    "gate_ece_val": 0.07361144778068446,
+    "category_ece_val": 0.13674632006256962,
+    "gate_auto_coverage_val": 0.8809523809523809,
+    "category_auto_coverage_val": 0.248
+  },
+  "data": {
+    "labels_parquet_sha256": "0a0c1a1bd9bfb90854661a2c3f5a04784fee3833ece1e470fdcb0a9f28b93bc5",
+    "split_manifest_sha256": "451ab15d517fdc3c4e765acd17884c37434c1209abaeb7a0730258bca6dff4fd",
+    "n_train_gate": 1371,
+    "n_val_gate": 294,
+    "n_train_category": 586,
+    "n_val_category": 125,
+    "label_provenance": "AI-assisted reference labels (two independent Claude coders + adjudicator); see reports/agreement.md",
+    "sources": "AURA-Sentiment + AURA-Classification v2 (MIT), see reports/data_manifest.md"
+  },
+  "seed": 42,
+  "sklearn_version": "1.9.1"
+}

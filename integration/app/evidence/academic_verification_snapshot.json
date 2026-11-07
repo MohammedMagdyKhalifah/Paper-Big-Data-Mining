@@ -1,0 +1,352 @@
+{
+  "purpose": "Documentation-only extraction of existing engineering verification evidence. No tests, inference, training or holdout evaluation rerun. Excerpts/projections preserve recorded values; source SHA256 allows local comparison. This is not a new benchmark or ML accuracy result.",
+  "inspection_date": "2026-10-31",
+  "source_code_cutoff": "035f3ebb193a4a7b0fd8f88bf4e9d521a0f0898b",
+  "commits": {
+    "3b2c2cf": "3b2c2cfe54a1b50a9d6f13d491f874d8801026b3",
+    "01f0b43": "01f0b43557e1b40ff46804695d12a20b639c6f9e",
+    "d835a86": "d835a8657a426f22e3bc5d0f979b91b7b411ecc3",
+    "035f3eb": "035f3ebb193a4a7b0fd8f88bf4e9d521a0f0898b",
+    "7175581": "71755810532f1b1b000e7162d44e7aa44f0c441f",
+    "afd3bde": "afd3bde03306c7d405106aeb94f76d552f957319",
+    "d8ffad4": "d8ffad4f6cf1ee37ff1b44fd0bb607344bc68ce8",
+    "aa4b394": "aa4b39448e867f84e945fa5b0e848beed7ee6984"
+  },
+  "frontend_lock_source": "frontend/package-lock.json",
+  "frontend_lock_sha256": "6e853924c709db6197d06472088b1fc0ec6a4350f37e2f05c1526baefe58060c",
+  "locked_frontend_versions": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "5.9.3",
+    "vite": "8.3.5",
+    "tailwindcss": "4.3.3",
+    "react-router-dom": "7.18.5",
+    "@tanstack/react-query": "5.105.0",
+    "recharts": "3.10.1",
+    "lucide-react": "0.553.0",
+    "vitest": "5.0.5",
+    "jsdom": "26.1.0"
+  },
+  "evidence": [
+    {
+      "id": "p1_backend",
+      "source_path_relative_to_app": "backend/storage/p1-recovery/final-backend.log",
+      "source_sha256": "c23ec5581068342a8d09a0e4a157ea9911b1eaaf7a939b90f6dfbbb65b4e725c",
+      "source_is_git_tracked": false,
+      "verbatim_excerpt": [
+        "93 passed, 11 warnings in 33.35s"
+      ]
+    },
+    {
+      "id": "p1_frontend",
+      "source_path_relative_to_app": "backend/storage/p1-recovery/final-frontend.log",
+      "source_sha256": "1c18b3cde6e3d07a715bb3b9e4cbd5c286e3f497c3c5d875aa01dea08882a806",
+      "source_is_git_tracked": false,
+      "verbatim_excerpt": [
+        " Test Files  2 passed (2)",
+        "      Tests  26 passed (26)",
+        "   Start at  01:54:09",
+        "   Duration  1.96s (tests 59%, environment 22%, import 9%, setup 7%, transform 3%)"
+      ]
+    },
+    {
+      "id": "p1_combined_ml",
+      "source_path_relative_to_app": "backend/storage/p1-recovery/final-full-tests.log",
+      "source_sha256": "a3949023728eeafc34d3db2ef23e751cb67f3357aab325467a34d3982f33b628",
+      "source_is_git_tracked": false,
+      "verbatim_excerpt": [
+        "FAILED app/backend/test_p1_analyze.py::test_image_only_error_screen_needs_context",
+        "FAILED app/backend/test_p1_analyze.py::test_error_screen_with_user_text_is_classified_as_narrative",
+        "FAILED app/backend/test_p1_analyze.py::test_chat_narrative_is_not_an_error_screen",
+        "FAILED app/backend/test_p1_analyze.py::test_blank_image_has_nothing_to_classify",
+        "FAILED app/backend/test_p1_analyze.py::test_two_step_flow_uses_corrected_ocr_text",
+        "FAILED app/backend/test_p1_analyze.py::test_recorded_scenario_regression[error_screen_image_only]",
+        "FAILED app/backend/test_p1_analyze.py::test_recorded_scenario_regression[error_screen_with_user_text]",
+        "FAILED app/backend/test_p1_analyze.py::test_recorded_scenario_regression[english_error_image]",
+        "FAILED app/backend/test_p1_analyze.py::test_recorded_scenario_regression[complaint_chat_image]",
+        "FAILED app/backend/test_p1_analyze.py::test_recorded_scenario_regression[degraded_jpeg_image]",
+        "FAILED app/backend/test_p1_analyze.py::test_recorded_scenario_regression[no_text_image]",
+        "FAILED app/backend/test_p1_ocr.py::test_vision_error_screen_has_text - Assert...",
+        "FAILED app/backend/test_p1_ocr.py::test_blank_image_is_empty - AssertionError...",
+        "FAILED app/backend/test_p1_ocr.py::test_extract_text_agrees_for_path_bytes_and_pil",
+        "14 failed, 233 passed, 11 warnings in 42.81s"
+      ]
+    },
+    {
+      "id": "p1_build",
+      "source_path_relative_to_app": "backend/storage/p1-recovery/final-build.log",
+      "source_sha256": "fb74689b8c99bdb6c89680005b5928d77454f5805c64674bd2c2a02015741171",
+      "source_is_git_tracked": false,
+      "verbatim_excerpt": [
+        "> tsc -b && vite build",
+        "vite v8.3.5 building client environment for production...",
+        "✓ 2311 modules transformed.",
+        "✓ built in 236ms"
+      ]
+    },
+    {
+      "id": "p1_environment",
+      "source_path_relative_to_app": "backend/storage/p1-recovery/final-environment.json",
+      "source_sha256": "44e3e3377b1471b7cadfbf9013b70523c77832f4b446c448b10f091caf8ef4fb",
+      "source_is_git_tracked": false,
+      "source_environment_relative_to_app": "backend/.venv-p1",
+      "recorded_data": {
+        "pinned_distributions": 77,
+        "checked_modules": [
+          "fastapi",
+          "uvicorn",
+          "sqlalchemy",
+          "pydantic",
+          "httpx",
+          "numpy",
+          "scipy",
+          "pandas",
+          "pyarrow",
+          "joblib",
+          "sklearn",
+          "torch",
+          "transformers",
+          "tokenizers",
+          "safetensors",
+          "PIL",
+          "objc",
+          "Foundation",
+          "Quartz",
+          "CoreML",
+          "Vision",
+          "easyocr",
+          "torchvision",
+          "cv2",
+          "skimage"
+        ],
+        "model_assets_verified": 10,
+        "ocr_assets_verified": 2,
+        "external_site_packages": [],
+        "pythonpath": null,
+        "system_site_packages": false,
+        "user_site_packages": false,
+        "pip_check": "No broken requirements found."
+      }
+    },
+    {
+      "id": "a4_environment",
+      "source_path_relative_to_app": "backend/storage/a4-environment-recovery/normal-isolation-audit.json",
+      "source_sha256": "1806eaad827704217edb99285bf9ae92904f08bf03f9fbb7cff03629d61afe2e",
+      "source_is_git_tracked": false,
+      "source_environment_relative_to_app": "backend/.venv-a4-standalone",
+      "recorded_data": {
+        "pinned_distributions": 60,
+        "checked_modules": [
+          "fastapi",
+          "uvicorn",
+          "sqlalchemy",
+          "pydantic",
+          "httpx",
+          "numpy",
+          "scipy",
+          "pandas",
+          "pyarrow",
+          "joblib",
+          "sklearn",
+          "torch",
+          "transformers",
+          "tokenizers",
+          "safetensors"
+        ],
+        "model_assets_verified": 10,
+        "external_site_packages": [],
+        "pythonpath": null,
+        "system_site_packages": false,
+        "user_site_packages": false,
+        "pip_check": "No broken requirements found."
+      }
+    },
+    {
+      "id": "a4_offline",
+      "source_path_relative_to_app": "backend/storage/a4-environment-recovery/offline-probe.json",
+      "source_sha256": "f0ac8822a18d233139209f3625bf982ccdad4cd6b57bc99a2da697960abfac59",
+      "source_is_git_tracked": false,
+      "source_environment_relative_to_app": "backend/.venv-a4-standalone",
+      "recorded_data": {
+        "cold_start_seconds": 6.1068,
+        "offline": true,
+        "network_attempts": [],
+        "external_package_reads": [],
+        "a4_predictions": [
+          {
+            "is_complaint": true,
+            "complaint_score": 0.9865,
+            "category": "AUTH",
+            "category_score": 0.9064,
+            "needs_review": false,
+            "model_version": "a4-marbert-v1"
+          },
+          {
+            "is_complaint": true,
+            "complaint_score": 0.9874,
+            "category": "AUTH",
+            "category_score": 0.907,
+            "needs_review": false,
+            "model_version": "a4-marbert-v1"
+          },
+          {
+            "is_complaint": false,
+            "complaint_score": 0.0574,
+            "category": null,
+            "category_score": null,
+            "needs_review": false,
+            "model_version": "a4-marbert-v1"
+          },
+          {
+            "is_complaint": true,
+            "complaint_score": 0.969,
+            "category": "PERF",
+            "category_score": 0.8522,
+            "needs_review": true,
+            "model_version": "a4-marbert-v1"
+          },
+          {
+            "is_complaint": true,
+            "complaint_score": 0.9756,
+            "category": "TRANS",
+            "category_score": 0.8972,
+            "needs_review": true,
+            "model_version": "a4-marbert-v1"
+          }
+        ],
+        "v1_rollback": {
+          "is_complaint": false,
+          "complaint_score": 0.3165,
+          "category": null,
+          "category_score": null,
+          "needs_review": false,
+          "model_version": "tfidf-baseline-v1"
+        },
+        "a4_reenabled": true,
+        "persistent_records_in_temporary_db": 6
+      }
+    },
+    {
+      "id": "p1_migration",
+      "source_path_relative_to_app": "backend/storage/p1-recovery/migration.json",
+      "source_sha256": "3ba447b55daef0b2beb2d10c58ebbca4cd2d59aebff46e845b2c3313eeb335f8",
+      "source_is_git_tracked": false,
+      "recorded_data": {
+        "legacy_schema_and_rows_unchanged": true,
+        "legacy_complaints": 9,
+        "tables": [
+          "complaints",
+          "corrections",
+          "p1_analyses",
+          "ocr_drafts"
+        ]
+      }
+    },
+    {
+      "id": "p1_preservation",
+      "source_path_relative_to_app": "backend/storage/p1-recovery/preservation.json",
+      "source_sha256": "54d76126ae9522feceeb4174d855ff1695dd230cd20a5269a8a4567f0a801d38",
+      "source_is_git_tracked": false,
+      "recorded_data": {
+        "ml_tree_exact_d8ffad4": true,
+        "a4_infer_export_pins_unchanged": true,
+        "normal_db_rows_equal_backup": true,
+        "normal_db_tables": {
+          "complaints": 9,
+          "corrections": 3,
+          "p1_analyses": 0,
+          "ocr_drafts": 0
+        },
+        "stable_environment_exists": true
+      }
+    },
+    {
+      "id": "a4_browser_overview",
+      "source_path_relative_to_app": "backend/storage/a4-live-overview.json",
+      "source_sha256": "158c2e169ffc1ff832c2d10fa5f3b3a5a56393fa26e052ad6e100788b41ec16c",
+      "source_is_git_tracked": false,
+      "recorded_data": {
+        "data_scope": "real",
+        "time_basis": "event",
+        "total_messages": 8,
+        "complaints": 6,
+        "complaint_ratio": 0.75,
+        "needs_review": 3,
+        "categories": [
+          {
+            "category": "AUTH",
+            "count": 3
+          },
+          {
+            "category": "AVAIL",
+            "count": 0
+          },
+          {
+            "category": "PERF",
+            "count": 2
+          },
+          {
+            "category": "TRANS",
+            "count": 1
+          },
+          {
+            "category": "UX",
+            "count": 0
+          },
+          {
+            "category": "OTHER",
+            "count": 0
+          }
+        ],
+        "uncategorized_complaints": 0,
+        "no_review_required_messages": 5,
+        "known_system_complaints": 3,
+        "dated_complaints": 0,
+        "sources": [
+          {
+            "source": "csv",
+            "messages": 4,
+            "complaints": 3
+          },
+          {
+            "source": "text",
+            "messages": 4,
+            "complaints": 3
+          }
+        ],
+        "comparison": null
+      }
+    },
+    {
+      "id": "a4_publication_trends",
+      "source_path_relative_to_app": "backend/storage/a4-live-trends.json",
+      "source_sha256": "c14304142cc7f7aa0ff5a1ca0b3b389b5e770f6282320b701d0322488ba7b35d",
+      "source_is_git_tracked": false,
+      "recorded_data": {
+        "data_scope": "real",
+        "time_basis": "event",
+        "interval": "day",
+        "missing_event_time": 6,
+        "points": []
+      }
+    },
+    {
+      "id": "a4_import_trends",
+      "source_path_relative_to_app": "backend/storage/a4-live-import-trends.json",
+      "source_sha256": "2db8031a56d6a13a0941cb944677aa869f7842d695c2c870db1e3637467df78d",
+      "source_is_git_tracked": false,
+      "recorded_data": {
+        "data_scope": "real",
+        "time_basis": "import",
+        "interval": "day",
+        "missing_event_time": 6,
+        "points": [
+          {
+            "date": "2026-10-30",
+            "count": 6
+          }
+        ]
+      }
+    }
+  ]
+}

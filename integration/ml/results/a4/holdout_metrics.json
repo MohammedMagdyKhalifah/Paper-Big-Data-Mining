@@ -1,0 +1,2502 @@
+{
+  "selected": "E4_marbert_synth",
+  "model_version": "a4-marbert-v1",
+  "label_note": "Reference labels are AI-assisted (sonnet+fable coders, opus adjudicator), NOT independent human ground truth.",
+  "holdout_n_excl_unclear": 1231,
+  "candidates": {
+    "E0_baseline_v1": {
+      "thresholds": {
+        "gate_decision": 0.5,
+        "gate_review_low": 0.4,
+        "gate_review_high": 0.6,
+        "category_review": 0.675,
+        "precision_target": 0.9
+      },
+      "holdout_all": {
+        "n": 1231,
+        "e2e_macro_f1": 0.489,
+        "gate_macro_f1": 0.8349,
+        "category_macro_f1": 0.5407,
+        "e2e_accuracy": 0.7116,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8613,
+            "recall": 0.8613,
+            "f1": 0.8613,
+            "support": 714
+          },
+          "AUTH": {
+            "precision": 0.5891,
+            "recall": 0.7308,
+            "f1": 0.6524,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.6118,
+            "recall": 0.6887,
+            "f1": 0.648,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.375,
+            "recall": 0.2143,
+            "f1": 0.2727,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.3158,
+            "recall": 0.24,
+            "f1": 0.2727,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.4694,
+            "recall": 0.2949,
+            "f1": 0.3622,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.3496,
+            "recall": 0.3583,
+            "f1": 0.3539,
+            "support": 120
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.6532,
+            "recall": 0.7788,
+            "f1": 0.7105,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.64,
+            "recall": 0.7417,
+            "f1": 0.6871,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.4,
+            "recall": 0.2857,
+            "f1": 0.3333,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.6364,
+            "recall": 0.42,
+            "f1": 0.506,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.6939,
+            "recall": 0.4359,
+            "f1": 0.5354,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.4603,
+            "recall": 0.4833,
+            "f1": 0.4715,
+            "support": 120
+          }
+        },
+        "recall_TRANS": 0.42,
+        "recall_UX": 0.4359,
+        "review": {
+          "review_rate": 0.4029,
+          "auto_coverage": 0.5971,
+          "auto_accuracy": 0.8844,
+          "auto_complaint_coverage": 0.207
+        }
+      },
+      "holdout_random": {
+        "n": 894,
+        "e2e_macro_f1": 0.4777,
+        "gate_macro_f1": 0.8685,
+        "category_macro_f1": 0.513,
+        "e2e_accuracy": 0.7528,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8864,
+            "recall": 0.8966,
+            "f1": 0.8914,
+            "support": 522
+          },
+          "AUTH": {
+            "precision": 0.6471,
+            "recall": 0.7253,
+            "f1": 0.6839,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.6475,
+            "recall": 0.72,
+            "f1": 0.6818,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.4,
+            "recall": 0.2,
+            "f1": 0.2667,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.0909,
+            "recall": 0.0588,
+            "f1": 0.0714,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.4737,
+            "recall": 0.2812,
+            "f1": 0.3529,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.4111,
+            "recall": 0.3814,
+            "f1": 0.3957,
+            "support": 97
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.6961,
+            "recall": 0.7802,
+            "f1": 0.7358,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.6783,
+            "recall": 0.776,
+            "f1": 0.7239,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.4286,
+            "recall": 0.3,
+            "f1": 0.3529,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.4,
+            "recall": 0.2353,
+            "f1": 0.2963,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.5714,
+            "recall": 0.375,
+            "f1": 0.4528,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.5393,
+            "recall": 0.4948,
+            "f1": 0.5161,
+            "support": 97
+          }
+        },
+        "recall_TRANS": 0.2353,
+        "recall_UX": 0.375,
+        "review": {
+          "review_rate": 0.3792,
+          "auto_coverage": 0.6208,
+          "auto_accuracy": 0.9045,
+          "auto_complaint_coverage": 0.2186
+        }
+      },
+      "holdout_enriched": {
+        "n": 337,
+        "e2e_macro_f1": 0.4292,
+        "gate_macro_f1": 0.747,
+        "category_macro_f1": 0.4849,
+        "e2e_accuracy": 0.6024,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.7903,
+            "recall": 0.7656,
+            "f1": 0.7778,
+            "support": 192
+          },
+          "AUTH": {
+            "precision": 0.3704,
+            "recall": 0.7692,
+            "f1": 0.5,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.4516,
+            "recall": 0.5385,
+            "f1": 0.4912,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 0.3333,
+            "recall": 0.25,
+            "f1": 0.2857,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.4074,
+            "recall": 0.3333,
+            "f1": 0.3667,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.4667,
+            "recall": 0.3043,
+            "f1": 0.3684,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.1818,
+            "recall": 0.2609,
+            "f1": 0.2143,
+            "support": 23
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.4545,
+            "recall": 0.7692,
+            "f1": 0.5714,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.4688,
+            "recall": 0.5769,
+            "f1": 0.5172,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 0.3333,
+            "recall": 0.25,
+            "f1": 0.2857,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.7391,
+            "recall": 0.5152,
+            "f1": 0.6071,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.7857,
+            "recall": 0.4783,
+            "f1": 0.5946,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.2703,
+            "recall": 0.4348,
+            "f1": 0.3333,
+            "support": 23
+          }
+        },
+        "recall_TRANS": 0.5152,
+        "recall_UX": 0.4783,
+        "review": {
+          "review_rate": 0.4659,
+          "auto_coverage": 0.5341,
+          "auto_accuracy": 0.8222,
+          "auto_complaint_coverage": 0.1788
+        }
+      },
+      "holdout_codeswitch": {
+        "n": 51,
+        "e2e_macro_f1": 0.4275,
+        "gate_macro_f1": 0.8516,
+        "category_macro_f1": 0.3837,
+        "e2e_accuracy": 0.7647,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8529,
+            "recall": 0.9355,
+            "f1": 0.8923,
+            "support": 31
+          },
+          "AUTH": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.625,
+            "recall": 0.7143,
+            "f1": 0.6667,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 1.0,
+            "recall": 0.3333,
+            "f1": 0.5,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333,
+            "support": 4
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.6667,
+            "recall": 0.8571,
+            "f1": 0.75,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.3333,
+            "recall": 0.25,
+            "f1": 0.2857,
+            "support": 4
+          }
+        },
+        "recall_TRANS": 0.6667,
+        "recall_UX": 0.0,
+        "review": {
+          "review_rate": 0.2941,
+          "auto_coverage": 0.7059,
+          "auto_accuracy": 0.8611,
+          "auto_complaint_coverage": 0.2353
+        }
+      },
+      "v1_test_NOT_BLIND": {
+        "n": 295,
+        "e2e_macro_f1": 0.5529,
+        "gate_macro_f1": 0.8449,
+        "category_macro_f1": 0.5679,
+        "e2e_accuracy": 0.7356,
+        "recall_TRANS": 0.125,
+        "recall_UX": 0.3636
+      }
+    },
+    "E1_tfidf_a4": {
+      "thresholds": {
+        "gate_review_low": 0.4,
+        "gate_review_high": 0.6,
+        "category_review": 0.675
+      },
+      "holdout_all": {
+        "n": 1231,
+        "e2e_macro_f1": 0.5868,
+        "gate_macro_f1": 0.8806,
+        "category_macro_f1": 0.6341,
+        "e2e_accuracy": 0.7717,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8971,
+            "recall": 0.9034,
+            "f1": 0.9002,
+            "support": 714
+          },
+          "AUTH": {
+            "precision": 0.7083,
+            "recall": 0.8173,
+            "f1": 0.7589,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7222,
+            "recall": 0.6887,
+            "f1": 0.7051,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.8,
+            "recall": 0.2857,
+            "f1": 0.4211,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.3148,
+            "recall": 0.34,
+            "f1": 0.3269,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.5672,
+            "recall": 0.4872,
+            "f1": 0.5241,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.4672,
+            "recall": 0.475,
+            "f1": 0.4711,
+            "support": 120
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.7436,
+            "recall": 0.8365,
+            "f1": 0.7873,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7297,
+            "recall": 0.7152,
+            "f1": 0.7224,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.8,
+            "recall": 0.2857,
+            "f1": 0.4211,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.5667,
+            "recall": 0.68,
+            "f1": 0.6182,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.7538,
+            "recall": 0.6282,
+            "f1": 0.6853,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.5656,
+            "recall": 0.575,
+            "f1": 0.5702,
+            "support": 120
+          }
+        },
+        "recall_TRANS": 0.68,
+        "recall_UX": 0.6282,
+        "review": {
+          "review_rate": 0.329,
+          "auto_coverage": 0.671,
+          "auto_accuracy": 0.9056,
+          "auto_complaint_coverage": 0.3145
+        }
+      },
+      "holdout_random": {
+        "n": 894,
+        "e2e_macro_f1": 0.5763,
+        "gate_macro_f1": 0.9034,
+        "category_macro_f1": 0.6046,
+        "e2e_accuracy": 0.7953,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9212,
+            "recall": 0.9176,
+            "f1": 0.9194,
+            "support": 522
+          },
+          "AUTH": {
+            "precision": 0.7282,
+            "recall": 0.8242,
+            "f1": 0.7732,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.7317,
+            "recall": 0.72,
+            "f1": 0.7258,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1": 0.4286,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.2609,
+            "recall": 0.3529,
+            "f1": 0.3,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.5,
+            "recall": 0.3438,
+            "f1": 0.4074,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.4747,
+            "recall": 0.4845,
+            "f1": 0.4796,
+            "support": 97
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.77,
+            "recall": 0.8462,
+            "f1": 0.8063,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.7402,
+            "recall": 0.752,
+            "f1": 0.746,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1": 0.4286,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.3913,
+            "recall": 0.5294,
+            "f1": 0.45,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.68,
+            "recall": 0.5312,
+            "f1": 0.5965,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.6129,
+            "recall": 0.5876,
+            "f1": 0.6,
+            "support": 97
+          }
+        },
+        "recall_TRANS": 0.5294,
+        "recall_UX": 0.5312,
+        "review": {
+          "review_rate": 0.3188,
+          "auto_coverage": 0.6812,
+          "auto_accuracy": 0.9212,
+          "auto_complaint_coverage": 0.3075
+        }
+      },
+      "holdout_enriched": {
+        "n": 337,
+        "e2e_macro_f1": 0.5548,
+        "gate_macro_f1": 0.8203,
+        "category_macro_f1": 0.5971,
+        "e2e_accuracy": 0.7092,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8342,
+            "recall": 0.8646,
+            "f1": 0.8491,
+            "support": 192
+          },
+          "AUTH": {
+            "precision": 0.5882,
+            "recall": 0.7692,
+            "f1": 0.6667,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.6667,
+            "recall": 0.5385,
+            "f1": 0.5957,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.3548,
+            "recall": 0.3333,
+            "f1": 0.3438,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.6,
+            "recall": 0.587,
+            "f1": 0.5934,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.4348,
+            "recall": 0.4348,
+            "f1": 0.4348,
+            "support": 23
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.5882,
+            "recall": 0.7692,
+            "f1": 0.6667,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.6667,
+            "recall": 0.5385,
+            "f1": 0.5957,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.6757,
+            "recall": 0.7576,
+            "f1": 0.7143,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.8,
+            "recall": 0.6957,
+            "f1": 0.7442,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.4138,
+            "recall": 0.5217,
+            "f1": 0.4615,
+            "support": 23
+          }
+        },
+        "recall_TRANS": 0.7576,
+        "recall_UX": 0.6957,
+        "review": {
+          "review_rate": 0.3561,
+          "auto_coverage": 0.6439,
+          "auto_accuracy": 0.8618,
+          "auto_complaint_coverage": 0.3333
+        }
+      },
+      "holdout_codeswitch": {
+        "n": 51,
+        "e2e_macro_f1": 0.5465,
+        "gate_macro_f1": 0.9364,
+        "category_macro_f1": 0.544,
+        "e2e_accuracy": 0.8627,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9118,
+            "recall": 1.0,
+            "f1": 0.9538,
+            "support": 31
+          },
+          "AUTH": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.7143,
+            "recall": 0.7143,
+            "f1": 0.7143,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 1.0,
+            "recall": 0.3333,
+            "f1": 0.5,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "support": 4
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.7143,
+            "recall": 0.7143,
+            "f1": 0.7143,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75,
+            "support": 4
+          }
+        },
+        "recall_TRANS": 1.0,
+        "recall_UX": 0.0,
+        "review": {
+          "review_rate": 0.2745,
+          "auto_coverage": 0.7255,
+          "auto_accuracy": 0.9459,
+          "auto_complaint_coverage": 0.4118
+        }
+      },
+      "v1_test_NOT_BLIND": {
+        "n": 295,
+        "e2e_macro_f1": 0.6386,
+        "gate_macro_f1": 0.8772,
+        "category_macro_f1": 0.6335,
+        "e2e_accuracy": 0.8034,
+        "recall_TRANS": 0.125,
+        "recall_UX": 0.4545
+      }
+    },
+    "E2_tfidf_a4_synth": {
+      "thresholds": {
+        "gate_review_low": 0.425,
+        "gate_review_high": 0.575,
+        "category_review": 0.775
+      },
+      "holdout_all": {
+        "n": 1231,
+        "e2e_macro_f1": 0.5968,
+        "gate_macro_f1": 0.883,
+        "category_macro_f1": 0.6408,
+        "e2e_accuracy": 0.7742,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8975,
+            "recall": 0.9076,
+            "f1": 0.9025,
+            "support": 714
+          },
+          "AUTH": {
+            "precision": 0.7117,
+            "recall": 0.7596,
+            "f1": 0.7349,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7042,
+            "recall": 0.6623,
+            "f1": 0.6826,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.6667,
+            "recall": 0.2857,
+            "f1": 0.4,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.4286,
+            "recall": 0.48,
+            "f1": 0.4528,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.5714,
+            "recall": 0.4615,
+            "f1": 0.5106,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.4733,
+            "recall": 0.5167,
+            "f1": 0.494,
+            "support": 120
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.7736,
+            "recall": 0.7885,
+            "f1": 0.781,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.6974,
+            "recall": 0.702,
+            "f1": 0.6997,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.8333,
+            "recall": 0.3571,
+            "f1": 0.5,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.5636,
+            "recall": 0.62,
+            "f1": 0.5905,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.7576,
+            "recall": 0.641,
+            "f1": 0.6944,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.553,
+            "recall": 0.6083,
+            "f1": 0.5794,
+            "support": 120
+          }
+        },
+        "recall_TRANS": 0.62,
+        "recall_UX": 0.641,
+        "review": {
+          "review_rate": 0.3542,
+          "auto_coverage": 0.6458,
+          "auto_accuracy": 0.9094,
+          "auto_complaint_coverage": 0.2259
+        }
+      },
+      "holdout_random": {
+        "n": 894,
+        "e2e_macro_f1": 0.5682,
+        "gate_macro_f1": 0.8997,
+        "category_macro_f1": 0.6043,
+        "e2e_accuracy": 0.7908,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9127,
+            "recall": 0.9215,
+            "f1": 0.9171,
+            "support": 522
+          },
+          "AUTH": {
+            "precision": 0.7474,
+            "recall": 0.7802,
+            "f1": 0.7634,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.7167,
+            "recall": 0.688,
+            "f1": 0.702,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1": 0.4286,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.2273,
+            "recall": 0.2941,
+            "f1": 0.2564,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.5238,
+            "recall": 0.3438,
+            "f1": 0.4151,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.4762,
+            "recall": 0.5155,
+            "f1": 0.495,
+            "support": 97
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8111,
+            "recall": 0.8022,
+            "f1": 0.8066,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.7,
+            "recall": 0.728,
+            "f1": 0.7137,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1": 0.5333,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.3182,
+            "recall": 0.4118,
+            "f1": 0.359,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.7083,
+            "recall": 0.5312,
+            "f1": 0.6071,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.5941,
+            "recall": 0.6186,
+            "f1": 0.6061,
+            "support": 97
+          }
+        },
+        "recall_TRANS": 0.4118,
+        "recall_UX": 0.5312,
+        "review": {
+          "review_rate": 0.349,
+          "auto_coverage": 0.651,
+          "auto_accuracy": 0.933,
+          "auto_complaint_coverage": 0.2234
+        }
+      },
+      "holdout_enriched": {
+        "n": 337,
+        "e2e_macro_f1": 0.5652,
+        "gate_macro_f1": 0.8392,
+        "category_macro_f1": 0.6007,
+        "e2e_accuracy": 0.73,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8564,
+            "recall": 0.8698,
+            "f1": 0.863,
+            "support": 192
+          },
+          "AUTH": {
+            "precision": 0.5,
+            "recall": 0.6154,
+            "f1": 0.5517,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.6364,
+            "recall": 0.5385,
+            "f1": 0.5833,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.5588,
+            "recall": 0.5758,
+            "f1": 0.5672,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.5952,
+            "recall": 0.5435,
+            "f1": 0.5682,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.4615,
+            "recall": 0.5217,
+            "f1": 0.4898,
+            "support": 23
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.5625,
+            "recall": 0.6923,
+            "f1": 0.6207,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.6818,
+            "recall": 0.5769,
+            "f1": 0.625,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.7273,
+            "recall": 0.7273,
+            "f1": 0.7273,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.7857,
+            "recall": 0.7174,
+            "f1": 0.75,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.4194,
+            "recall": 0.5652,
+            "f1": 0.4815,
+            "support": 23
+          }
+        },
+        "recall_TRANS": 0.7273,
+        "recall_UX": 0.7174,
+        "review": {
+          "review_rate": 0.368,
+          "auto_coverage": 0.632,
+          "auto_accuracy": 0.8451,
+          "auto_complaint_coverage": 0.2324
+        }
+      },
+      "holdout_codeswitch": {
+        "n": 51,
+        "e2e_macro_f1": 0.5418,
+        "gate_macro_f1": 0.894,
+        "category_macro_f1": 0.6095,
+        "e2e_accuracy": 0.8431,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8824,
+            "recall": 0.9677,
+            "f1": 0.9231,
+            "support": 31
+          },
+          "AUTH": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.8333,
+            "recall": 0.7143,
+            "f1": 0.7692,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 1.0,
+            "recall": 0.3333,
+            "f1": 0.5,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "recall_TRANS": 1.0,
+        "recall_UX": 0.0,
+        "review": {
+          "review_rate": 0.3529,
+          "auto_coverage": 0.6471,
+          "auto_accuracy": 0.9091,
+          "auto_complaint_coverage": 0.1176
+        }
+      },
+      "v1_test_NOT_BLIND": {
+        "n": 295,
+        "e2e_macro_f1": 0.6143,
+        "gate_macro_f1": 0.8558,
+        "category_macro_f1": 0.6535,
+        "e2e_accuracy": 0.7864,
+        "recall_TRANS": 0.125,
+        "recall_UX": 0.5455
+      }
+    },
+    "E5_e5_lr": {
+      "thresholds": {
+        "gate_review_low": 0.3,
+        "gate_review_high": 0.7,
+        "category_review": 0.775
+      },
+      "holdout_all": {
+        "n": 1231,
+        "e2e_macro_f1": 0.5334,
+        "gate_macro_f1": 0.8369,
+        "category_macro_f1": 0.5899,
+        "e2e_accuracy": 0.7344,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8432,
+            "recall": 0.8964,
+            "f1": 0.869,
+            "support": 714
+          },
+          "AUTH": {
+            "precision": 0.633,
+            "recall": 0.6635,
+            "f1": 0.6479,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.6786,
+            "recall": 0.6291,
+            "f1": 0.6529,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.2143,
+            "f1": 0.3529,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.4062,
+            "recall": 0.26,
+            "f1": 0.3171,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.5574,
+            "recall": 0.4359,
+            "f1": 0.4892,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.3937,
+            "recall": 0.4167,
+            "f1": 0.4049,
+            "support": 120
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.6759,
+            "recall": 0.7019,
+            "f1": 0.6887,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7203,
+            "recall": 0.6821,
+            "f1": 0.7007,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.5714,
+            "recall": 0.2857,
+            "f1": 0.381,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.6444,
+            "recall": 0.58,
+            "f1": 0.6105,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.6866,
+            "recall": 0.5897,
+            "f1": 0.6345,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.4762,
+            "recall": 0.5833,
+            "f1": 0.5243,
+            "support": 120
+          }
+        },
+        "recall_TRANS": 0.58,
+        "recall_UX": 0.5897,
+        "review": {
+          "review_rate": 0.3428,
+          "auto_coverage": 0.6572,
+          "auto_accuracy": 0.8739,
+          "auto_complaint_coverage": 0.3496
+        }
+      },
+      "holdout_random": {
+        "n": 894,
+        "e2e_macro_f1": 0.511,
+        "gate_macro_f1": 0.8557,
+        "category_macro_f1": 0.5175,
+        "e2e_accuracy": 0.7472,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8631,
+            "recall": 0.9061,
+            "f1": 0.8841,
+            "support": 522
+          },
+          "AUTH": {
+            "precision": 0.6452,
+            "recall": 0.6593,
+            "f1": 0.6522,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.681,
+            "recall": 0.632,
+            "f1": 0.6556,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.3077,
+            "recall": 0.2353,
+            "f1": 0.2667,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.3871,
+            "recall": 0.375,
+            "f1": 0.381,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.4176,
+            "recall": 0.3918,
+            "f1": 0.4043,
+            "support": 97
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.6957,
+            "recall": 0.7033,
+            "f1": 0.6995,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.719,
+            "recall": 0.696,
+            "f1": 0.7073,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.6,
+            "recall": 0.3,
+            "f1": 0.4,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.3333,
+            "recall": 0.2941,
+            "f1": 0.3125,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.4667,
+            "recall": 0.4375,
+            "f1": 0.4516,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.5046,
+            "recall": 0.567,
+            "f1": 0.534,
+            "support": 97
+          }
+        },
+        "recall_TRANS": 0.2941,
+        "recall_UX": 0.4375,
+        "review": {
+          "review_rate": 0.3244,
+          "auto_coverage": 0.6756,
+          "auto_accuracy": 0.8758,
+          "auto_complaint_coverage": 0.3902
+        }
+      },
+      "holdout_enriched": {
+        "n": 337,
+        "e2e_macro_f1": 0.5459,
+        "gate_macro_f1": 0.7871,
+        "category_macro_f1": 0.6076,
+        "e2e_accuracy": 0.7003,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.7915,
+            "recall": 0.8698,
+            "f1": 0.8288,
+            "support": 192
+          },
+          "AUTH": {
+            "precision": 0.5625,
+            "recall": 0.6923,
+            "f1": 0.6207,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.6667,
+            "recall": 0.6154,
+            "f1": 0.64,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.4737,
+            "recall": 0.2727,
+            "f1": 0.3462,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.7333,
+            "recall": 0.4783,
+            "f1": 0.5789,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.3333,
+            "recall": 0.5217,
+            "f1": 0.4068,
+            "support": 23
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.5625,
+            "recall": 0.6923,
+            "f1": 0.6207,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.7273,
+            "recall": 0.6154,
+            "f1": 0.6667,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.8,
+            "recall": 0.7273,
+            "f1": 0.7619,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.8649,
+            "recall": 0.6957,
+            "f1": 0.7711,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.3947,
+            "recall": 0.6522,
+            "f1": 0.4918,
+            "support": 23
+          }
+        },
+        "recall_TRANS": 0.7273,
+        "recall_UX": 0.6957,
+        "review": {
+          "review_rate": 0.3917,
+          "auto_coverage": 0.6083,
+          "auto_accuracy": 0.8683,
+          "auto_complaint_coverage": 0.2381
+        }
+      },
+      "holdout_codeswitch": {
+        "n": 51,
+        "e2e_macro_f1": 0.3855,
+        "gate_macro_f1": 0.8432,
+        "category_macro_f1": 0.5393,
+        "e2e_accuracy": 0.7843,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8158,
+            "recall": 1.0,
+            "f1": 0.8986,
+            "support": 31
+          },
+          "AUTH": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.8,
+            "recall": 0.5714,
+            "f1": 0.6667,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333,
+            "support": 4
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.8333,
+            "recall": 0.7143,
+            "f1": 0.7692,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6667,
+            "support": 4
+          }
+        },
+        "recall_TRANS": 1.0,
+        "recall_UX": 0.0,
+        "review": {
+          "review_rate": 0.2941,
+          "auto_coverage": 0.7059,
+          "auto_accuracy": 0.8611,
+          "auto_complaint_coverage": 0.2308
+        }
+      },
+      "v1_test_NOT_BLIND": {
+        "n": 295,
+        "e2e_macro_f1": 0.5845,
+        "gate_macro_f1": 0.8525,
+        "category_macro_f1": 0.626,
+        "e2e_accuracy": 0.7763,
+        "recall_TRANS": 0.5,
+        "recall_UX": 0.5455
+      }
+    },
+    "E3_marbert_final": {
+      "thresholds": {
+        "gate_review_low": 0.5,
+        "gate_review_high": 0.5,
+        "category_review": 0.85
+      },
+      "holdout_all": {
+        "n": 1231,
+        "e2e_macro_f1": 0.7041,
+        "gate_macro_f1": 0.9024,
+        "category_macro_f1": 0.7559,
+        "e2e_accuracy": 0.8107,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.967,
+            "recall": 0.8627,
+            "f1": 0.9119,
+            "support": 714
+          },
+          "AUTH": {
+            "precision": 0.6786,
+            "recall": 0.9135,
+            "f1": 0.7787,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7762,
+            "recall": 0.7351,
+            "f1": 0.7551,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.7273,
+            "recall": 0.5714,
+            "f1": 0.64,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.4286,
+            "recall": 0.78,
+            "f1": 0.5532,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.6629,
+            "recall": 0.7564,
+            "f1": 0.7066,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.5833,
+            "recall": 0.5833,
+            "f1": 0.5833,
+            "support": 120
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.7851,
+            "recall": 0.9135,
+            "f1": 0.8444,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7872,
+            "recall": 0.7351,
+            "f1": 0.7603,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.8,
+            "recall": 0.5714,
+            "f1": 0.6667,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.6825,
+            "recall": 0.86,
+            "f1": 0.7611,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.8333,
+            "recall": 0.8333,
+            "f1": 0.8333,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.7212,
+            "recall": 0.625,
+            "f1": 0.6696,
+            "support": 120
+          }
+        },
+        "recall_TRANS": 0.86,
+        "recall_UX": 0.8333,
+        "review": {
+          "review_rate": 0.2275,
+          "auto_coverage": 0.7725,
+          "auto_accuracy": 0.9043,
+          "auto_complaint_coverage": 0.5286
+        }
+      },
+      "holdout_random": {
+        "n": 894,
+        "e2e_macro_f1": 0.6765,
+        "gate_macro_f1": 0.9161,
+        "category_macro_f1": 0.7203,
+        "e2e_accuracy": 0.8188,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9706,
+            "recall": 0.8851,
+            "f1": 0.9259,
+            "support": 522
+          },
+          "AUTH": {
+            "precision": 0.6975,
+            "recall": 0.9121,
+            "f1": 0.7905,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.8051,
+            "recall": 0.76,
+            "f1": 0.7819,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6667,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.3438,
+            "recall": 0.6471,
+            "f1": 0.449,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.5263,
+            "recall": 0.625,
+            "f1": 0.5714,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.534,
+            "recall": 0.567,
+            "f1": 0.55,
+            "support": 97
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8058,
+            "recall": 0.9121,
+            "f1": 0.8557,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.819,
+            "recall": 0.76,
+            "f1": 0.7884,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.8571,
+            "recall": 0.6,
+            "f1": 0.7059,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.5,
+            "recall": 0.7647,
+            "f1": 0.6047,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.7188,
+            "recall": 0.7188,
+            "f1": 0.7188,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.6818,
+            "recall": 0.6186,
+            "f1": 0.6486,
+            "support": 97
+          }
+        },
+        "recall_TRANS": 0.7647,
+        "recall_UX": 0.7188,
+        "review": {
+          "review_rate": 0.2271,
+          "auto_coverage": 0.7729,
+          "auto_accuracy": 0.919,
+          "auto_complaint_coverage": 0.5144
+        }
+      },
+      "holdout_enriched": {
+        "n": 337,
+        "e2e_macro_f1": 0.7057,
+        "gate_macro_f1": 0.8662,
+        "category_macro_f1": 0.7521,
+        "e2e_accuracy": 0.7893,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9565,
+            "recall": 0.8021,
+            "f1": 0.8725,
+            "support": 192
+          },
+          "AUTH": {
+            "precision": 0.5714,
+            "recall": 0.9231,
+            "f1": 0.7059,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.64,
+            "recall": 0.6154,
+            "f1": 0.6275,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 0.6667,
+            "recall": 0.5,
+            "f1": 0.5714,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.4746,
+            "recall": 0.8485,
+            "f1": 0.6087,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.7647,
+            "recall": 0.8478,
+            "f1": 0.8041,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.8824,
+            "recall": 0.6522,
+            "f1": 0.75,
+            "support": 23
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.6667,
+            "recall": 0.9231,
+            "f1": 0.7742,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.64,
+            "recall": 0.6154,
+            "f1": 0.6275,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 0.6667,
+            "recall": 0.5,
+            "f1": 0.5714,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.8108,
+            "recall": 0.9091,
+            "f1": 0.8571,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.913,
+            "recall": 0.913,
+            "f1": 0.913,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.9375,
+            "recall": 0.6522,
+            "f1": 0.7692,
+            "support": 23
+          }
+        },
+        "recall_TRANS": 0.9091,
+        "recall_UX": 0.913,
+        "review": {
+          "review_rate": 0.2285,
+          "auto_coverage": 0.7715,
+          "auto_accuracy": 0.8654,
+          "auto_complaint_coverage": 0.5625
+        }
+      },
+      "holdout_codeswitch": {
+        "n": 51,
+        "e2e_macro_f1": 0.6545,
+        "gate_macro_f1": 0.919,
+        "category_macro_f1": 0.6326,
+        "e2e_accuracy": 0.8235,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9655,
+            "recall": 0.9032,
+            "f1": 0.9333,
+            "support": 31
+          },
+          "AUTH": {
+            "precision": 0.625,
+            "recall": 1.0,
+            "f1": 0.7692,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.75,
+            "recall": 0.4286,
+            "f1": 0.5455,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6667,
+            "support": 4
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.7143,
+            "recall": 1.0,
+            "f1": 0.8333,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.75,
+            "recall": 0.4286,
+            "f1": 0.5455,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75,
+            "support": 4
+          }
+        },
+        "recall_TRANS": 0.6667,
+        "recall_UX": 0.0,
+        "review": {
+          "review_rate": 0.2157,
+          "auto_coverage": 0.7843,
+          "auto_accuracy": 0.95,
+          "auto_complaint_coverage": 0.5
+        }
+      },
+      "v1_test_NOT_BLIND": {
+        "n": 295,
+        "e2e_macro_f1": 0.7696,
+        "gate_macro_f1": 0.9069,
+        "category_macro_f1": 0.8285,
+        "e2e_accuracy": 0.861,
+        "recall_TRANS": 0.875,
+        "recall_UX": 0.7273
+      }
+    },
+    "E4_marbert_synth": {
+      "thresholds": {
+        "gate_review_low": 0.5,
+        "gate_review_high": 0.5,
+        "category_review": 0.9
+      },
+      "holdout_all": {
+        "n": 1231,
+        "e2e_macro_f1": 0.6896,
+        "gate_macro_f1": 0.9125,
+        "category_macro_f1": 0.729,
+        "e2e_accuracy": 0.831,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9271,
+            "recall": 0.9258,
+            "f1": 0.9264,
+            "support": 714
+          },
+          "AUTH": {
+            "precision": 0.8,
+            "recall": 0.8462,
+            "f1": 0.8224,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7778,
+            "recall": 0.7881,
+            "f1": 0.7829,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.7143,
+            "recall": 0.3571,
+            "f1": 0.4762,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.5556,
+            "recall": 0.6,
+            "f1": 0.5769,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.7302,
+            "recall": 0.5897,
+            "f1": 0.6525,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.5649,
+            "recall": 0.6167,
+            "f1": 0.5896,
+            "support": 120
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8544,
+            "recall": 0.8462,
+            "f1": 0.8502,
+            "support": 104
+          },
+          "AVAIL": {
+            "precision": 0.7933,
+            "recall": 0.7881,
+            "f1": 0.7907,
+            "support": 151
+          },
+          "PERF": {
+            "precision": 0.6667,
+            "recall": 0.4286,
+            "f1": 0.5217,
+            "support": 14
+          },
+          "TRANS": {
+            "precision": 0.7455,
+            "recall": 0.82,
+            "f1": 0.781,
+            "support": 50
+          },
+          "UX": {
+            "precision": 0.8209,
+            "recall": 0.7051,
+            "f1": 0.7586,
+            "support": 78
+          },
+          "OTHER": {
+            "precision": 0.6391,
+            "recall": 0.7083,
+            "f1": 0.6719,
+            "support": 120
+          }
+        },
+        "recall_TRANS": 0.82,
+        "recall_UX": 0.7051,
+        "review": {
+          "review_rate": 0.2697,
+          "auto_coverage": 0.7303,
+          "auto_accuracy": 0.9132,
+          "auto_complaint_coverage": 0.3591
+        }
+      },
+      "holdout_random": {
+        "n": 894,
+        "e2e_macro_f1": 0.6713,
+        "gate_macro_f1": 0.923,
+        "category_macro_f1": 0.7139,
+        "e2e_accuracy": 0.8445,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9383,
+            "recall": 0.933,
+            "f1": 0.9356,
+            "support": 522
+          },
+          "AUTH": {
+            "precision": 0.8478,
+            "recall": 0.8571,
+            "f1": 0.8525,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.813,
+            "recall": 0.8,
+            "f1": 0.8065,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.6667,
+            "recall": 0.4,
+            "f1": 0.5,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.4286,
+            "recall": 0.5294,
+            "f1": 0.4737,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.6,
+            "recall": 0.4688,
+            "f1": 0.5263,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.5741,
+            "recall": 0.6392,
+            "f1": 0.6049,
+            "support": 97
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8864,
+            "recall": 0.8571,
+            "f1": 0.8715,
+            "support": 91
+          },
+          "AVAIL": {
+            "precision": 0.8264,
+            "recall": 0.8,
+            "f1": 0.813,
+            "support": 125
+          },
+          "PERF": {
+            "precision": 0.625,
+            "recall": 0.5,
+            "f1": 0.5556,
+            "support": 10
+          },
+          "TRANS": {
+            "precision": 0.6316,
+            "recall": 0.7059,
+            "f1": 0.6667,
+            "support": 17
+          },
+          "UX": {
+            "precision": 0.7,
+            "recall": 0.6562,
+            "f1": 0.6774,
+            "support": 32
+          },
+          "OTHER": {
+            "precision": 0.6698,
+            "recall": 0.732,
+            "f1": 0.6995,
+            "support": 97
+          }
+        },
+        "recall_TRANS": 0.7059,
+        "recall_UX": 0.6562,
+        "review": {
+          "review_rate": 0.2506,
+          "auto_coverage": 0.7494,
+          "auto_accuracy": 0.9194,
+          "auto_complaint_coverage": 0.4027
+        }
+      },
+      "holdout_enriched": {
+        "n": 337,
+        "e2e_macro_f1": 0.6459,
+        "gate_macro_f1": 0.8848,
+        "category_macro_f1": 0.6708,
+        "e2e_accuracy": 0.7953,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.8969,
+            "recall": 0.9062,
+            "f1": 0.9016,
+            "support": 192
+          },
+          "AUTH": {
+            "precision": 0.5556,
+            "recall": 0.7692,
+            "f1": 0.6452,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.6333,
+            "recall": 0.7308,
+            "f1": 0.6786,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.6364,
+            "recall": 0.6364,
+            "f1": 0.6364,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.8158,
+            "recall": 0.6739,
+            "f1": 0.7381,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.5217,
+            "recall": 0.5217,
+            "f1": 0.5217,
+            "support": 23
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.6667,
+            "recall": 0.7692,
+            "f1": 0.7143,
+            "support": 13
+          },
+          "AVAIL": {
+            "precision": 0.6552,
+            "recall": 0.7308,
+            "f1": 0.6909,
+            "support": 26
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          },
+          "TRANS": {
+            "precision": 0.8056,
+            "recall": 0.8788,
+            "f1": 0.8406,
+            "support": 33
+          },
+          "UX": {
+            "precision": 0.9189,
+            "recall": 0.7391,
+            "f1": 0.8193,
+            "support": 46
+          },
+          "OTHER": {
+            "precision": 0.5185,
+            "recall": 0.6087,
+            "f1": 0.56,
+            "support": 23
+          }
+        },
+        "recall_TRANS": 0.8788,
+        "recall_UX": 0.7391,
+        "review": {
+          "review_rate": 0.3205,
+          "auto_coverage": 0.6795,
+          "auto_accuracy": 0.8952,
+          "auto_complaint_coverage": 0.2448
+        }
+      },
+      "holdout_codeswitch": {
+        "n": 51,
+        "e2e_macro_f1": 0.6585,
+        "gate_macro_f1": 0.919,
+        "category_macro_f1": 0.6387,
+        "e2e_accuracy": 0.8235,
+        "per_class_e2e": {
+          "NO": {
+            "precision": 0.9655,
+            "recall": 0.9032,
+            "f1": 0.9333,
+            "support": 31
+          },
+          "AUTH": {
+            "precision": 0.6667,
+            "recall": 0.8,
+            "f1": 0.7273,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.6667,
+            "recall": 0.5714,
+            "f1": 0.6154,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6667,
+            "support": 4
+          }
+        },
+        "per_class_category": {
+          "AUTH": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 5
+          },
+          "AVAIL": {
+            "precision": 0.6667,
+            "recall": 0.5714,
+            "f1": 0.6154,
+            "support": 7
+          },
+          "PERF": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "TRANS": {
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "support": 3
+          },
+          "UX": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "OTHER": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75,
+            "support": 4
+          }
+        },
+        "recall_TRANS": 0.6667,
+        "recall_UX": 0.0,
+        "review": {
+          "review_rate": 0.3137,
+          "auto_coverage": 0.6863,
+          "auto_accuracy": 0.9714,
+          "auto_complaint_coverage": 0.2727
+        }
+      },
+      "v1_test_NOT_BLIND": {
+        "n": 295,
+        "e2e_macro_f1": 0.6964,
+        "gate_macro_f1": 0.8952,
+        "category_macro_f1": 0.7665,
+        "e2e_accuracy": 0.8373,
+        "recall_TRANS": 0.375,
+        "recall_UX": 0.6364
+      }
+    }
+  },
+  "ci95_holdout_all": {
+    "e2e_macro_f1": {
+      "selected": [
+        0.634,
+        0.7359
+      ],
+      "baseline": [
+        0.4368,
+        0.5359
+      ],
+      "delta_selected_minus_baseline": [
+        0.1392,
+        0.2595
+      ]
+    },
+    "gate_macro_f1": {
+      "selected": [
+        0.8959,
+        0.9283
+      ],
+      "baseline": [
+        0.8125,
+        0.8548
+      ],
+      "delta_selected_minus_baseline": [
+        0.0557,
+        0.0998
+      ]
+    },
+    "category_macro_f1": {
+      "selected": [
+        0.6678,
+        0.78
+      ],
+      "baseline": [
+        0.4779,
+        0.5957
+      ],
+      "delta_selected_minus_baseline": [
+        0.1221,
+        0.2516
+      ]
+    }
+  },
+  "external_aura_proxy": {
+    "E0_baseline_v1": {
+      "n": 2604,
+      "agreement": 0.8356,
+      "kappa": 0.604,
+      "precision_vs_bug_report": 0.6539,
+      "recall_vs_bug_report": 0.7971
+    },
+    "E4_marbert_synth": {
+      "n": 2604,
+      "agreement": 0.8706,
+      "kappa": 0.6883,
+      "precision_vs_bug_report": 0.7081,
+      "recall_vs_bug_report": 0.8642
+    }
+  },
+  "cost_selected_export": {
+    "artifact_size_mb": 328.4,
+    "first_call_s": 3.07,
+    "latency_ms": 34.31,
+    "peak_rss_mb": 1534.3,
+    "device": "CPU (Apple M2 Max)"
+  },
+  "latency_note": "latency measured through ml.infer.predict_text, one message at a time"
+}

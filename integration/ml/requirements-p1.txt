@@ -1,0 +1,10 @@
+# P1 (text + screenshot analysis) inference dependencies, on top of the A4 MARBERT inference set.
+# Verified in ml/.worktrees/p1/ml/.venv (CPython 3.12.7, macOS 27.0.1 arm64).
+-r requirements-a4-inference.txt
+pillow==13.0.0
+# Default OCR engine on macOS: Apple Vision (on-device). No model download.
+pyobjc-core==13.0; sys_platform == "darwin"
+pyobjc-framework-Cocoa==13.0; sys_platform == "darwin"
+pyobjc-framework-Quartz==13.0; sys_platform == "darwin"
+pyobjc-framework-CoreML==13.0; sys_platform == "darwin"
+pyobjc-framework-Vision==13.0; sys_platform == "darwin"

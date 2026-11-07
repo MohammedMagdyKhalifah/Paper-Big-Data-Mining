@@ -1,0 +1,168 @@
+# Manual domain mapping of AURA appName values (author: Claude Code, from app names only).
+# Used for sampling/stratification and per-domain bias reporting, NOT as a model feature.
+# Apps not listed in any domain default to `consumer_other` (social, media, tools).
+# `games` are excluded from the core annotation sample (PROJECT_IMPLEMENTATION_PLAN_AR.md §2).
+version: 1
+default_domain: consumer_other
+
+# Saudi government / public-service apps, grouped by canonical service name.
+gov:
+  Absher: ["Absher App", "Absher", "ABSHER individuals"]
+  Tawakkalna: ["\"Tawakkalna\" App", "Tawakkalna (Covid-19 KSA)"]
+  Mawid: ["Mawid app", "Mawid (موعد)"]
+  Sehhaty: ["Sehhaty App:", "Sehhaty | صحتي"]
+  Sehha: ["Sehha app"]
+  Tabaud: ["Tabaud (COVID-19 KSA)", "\"Tabaud\" App"]
+  Tetamman: ["( Tetamman ) تطمن", "Rest Assured \"Tataman\" App"]
+  Asefni: ["أسعفني", "ASAFNY app"]
+  Trade Violations Report: ["Reporting Trade Violations app", "تقديم بلاغ مخالفة تجارية"]
+  Eatmarna: ["Eatmarna App", "Eatmarna"]
+  CITC: ["CITC App", "هيئة الاتصالات وتقنية المعلومات"]
+  Kollona Amn: ["Kollona Amn", "Kolluna Amn app"]
+  Saudi Post: ["Saudi Post App", "Saudi Post"]
+  Madrasati: ["مدرستي", "\"Madrasati\" App"]
+  Virtual Kindergarten: ["\"Virtual Kindergarten (Rawda)\" App", "الروضة الافتراضية"]
+  Mawared: ["Mawared app", "موارد (Mawared)"]
+  Sakani: ["Sakani", "Sakani app"]
+  MEWA: ["Ministry of Environment, Water, & Agriculture App", "وزارة البيئة والمياه والزراعة ."]
+  Watani: ["Watani - We hear you", "Watany app"]
+  Citizen Account: ["Citizen Account", "Hisab Al Muwaten app"]
+  Taminati: ["تأميناتي", "Ta’minati app"]
+  MOJ: ["وزارة العدل السعودية - MOJ", "application of the Ministry of Justice"]
+  Ashanak: ["Ashanak app", "Ashanak"]
+  Takhfidhat: ["Takhfidhat App"]
+  Maan: ["Ma’an"]
+  Jawazat: ["الجوازات", "Al Jawazat app"]
+  Toroq: ["Toroq app", "طرق"]
+  VAT: ["VAT", "VAT App"]
+  Balady: ["Balady app", "بلدي"]
+  My Job Information: ["My Job Information App:", "بياناتي الوظيفية"]
+  Enjoy Saudi: ["Enjoy Saudi", "Enjoy App"]
+  Tameni: ["Tameni", "Tamini"]
+  Maan Lilrasd: ["معاً للرصد"]
+  Public Pension Agency: ["Public Pension Agency | PPA", "Public Pension Agency App"]
+  Saudi Council of Engineers: ["Saudi Council of Engineer", "Saudi Council Of Engineers App"]
+  Zakaty: ["Zakaty - زكاتي"]
+  Real Estate Consultant: ["المستشار العقاري -المستفيد", "\"Real estate consultant - beneficiary\" App"]
+  Fazaa: ["Faz’aa app\"", "Fazaah 998"]
+  Monshaat: ["نوافذ منشآت", "Monshaat App"]
+  Saudi Airports: ["Saudi Airports App"]
+  Maroof: ["معروف", "Maroof App"]
+  Fatoraty: ["Fatoraty App"]
+  Saudi Laws Directory: ["Saudi Laws Directory App", "دليل الأنظمة السعودية"]
+  Safeer: ["سفير الطلبة"]
+  Mushaf Al Madina: ["مصحف المدينة النبوية", "Mushaf Al Madina Al Monawarah App"]
+
+utility:
+  Saudi Electricity: ["ALKAHRABA", "ALKAHRABA (Saudi ELectricity Company) app"]
+
+finance:
+  Al Rajhi: ["Al Rajhi Mobile", "AlRajhi Mobile"]
+  AlAhli: ["AlAhliToken"]
+
+telecom:
+  stc: ["mystc KSA"]
+
+commerce_delivery:
+  HungerStation: ["HungerStation", "HungerStation - Food, Groceries Delivery & More"]
+  Jahez: ["Jahez"]
+  ToYou: ["ToYou - Food & Transportation"]
+  Amazon: ["Amazon Shopping - Search, Find, Ship, and Save", "Amazon - Shopping made easy"]
+  noon: ["noon shopping"]
+  SHEIN: ["SHEIN-Fashion Shopping Online"]
+  ALBAIK: ["ALBAIK Delivery"]
+  Floward: ["Floward: Same-Day Flowers & Gifts Delivery"]
+
+games:
+  - "Yalla Ludo - Ludo&Domino"
+  - "Clash of Clans"
+  - "Call of Duty®: Mobile"
+  - "Nida Harb 3: Alliance Empire | MMO Nuclear War"
+  - "Ludo STAR"
+  - "Warfare Strike:Ghost Recon"
+  - "Roblox"
+  - "انتقام السلاطين"
+  - "Rise of Kingdoms: Lost Crusade"
+  - "Rise of Kingdoms"
+  - "Gardenscapes"
+  - "Homescapes"
+  - "INVASION: صقور العرب‎"
+  - "My PlayHome : Play Home Doll House"
+  - "My PlayHome Stores"
+  - "My PlayHome Hospital"
+  - "My PlayHome School"
+  - "State of Survival: Zombie War"
+  - "State of Survival: Survive the Zombie Apocalypse"
+  - "PUBG MOBILE - DREAM TEAM"
+  - "Garena Free Fire - The Cobra"
+  - "Garena Free Fire: BOOYAH Day"
+  - "Grand Theft Auto: San Andreas"
+  - "Grand Theft Auto: Vice City"
+  - "Grand Theft Auto III"
+  - "GTA: Liberty City Stories"
+  - "Brawl Stars"
+  - "HAGO-Let's hang out! Game, Chat, Live, Among Us"
+  - "Top War: Battle Game"
+  - "ملكة الموضة | لعبة قصص و تمثيل"
+  - "بلوت VIP"
+  - "Jawaker Trix, Tarneeb, Baloot, Hand & More"
+  - "Evony: The King's Return"
+  - "Empires & Puzzles: Epic Match 3"
+  - "Mobile Legends: Bang Bang"
+  - "Mafia City"
+  - "Mafia City: War of Underworld"
+  - "Lords Mobile: Kingdom Wars"
+  - "My Town : Best Friends' House games for kids"
+  - "My Town : Hotel Free"
+  - "My Town : Beach Picnic"
+  - "My Town : Daycare"
+  - "Join Clash 3D"
+  - "Hitman Sniper"
+  - "Frontier Justice - Return to the Wild West"
+  - "Frontier Justice"
+  - "DOP 2: Delete One Part"
+  - "8 Ball Pool"
+  - "Emoji Puzzle!"
+  - "Hitmasters"
+  - "Smash Colors 3D - Free Beat Color Rhythm Ball Game"
+  - "Fat Pusher"
+  - "Akinator"
+  - "Wacky Run"
+  - "Stickman Legends: Shadow War Offline Fighting Game"
+  - "Texas Hold'em Poker: Pokerist"
+  - "Bad Girls Wrestling Rumble: Women Fighting Games"
+  - "Girl Genius!"
+  - "Stacky Dash"
+  - "House Life 3D"
+  - "Red Imposter: Nightmare Christmas"
+  - "High Heels!"
+  - "Brainzzz"
+  - "Love Pins"
+  - "Bully: Anniversary Edition"
+  - "Shift Race"
+  - "RFS - Real Flight Simulator"
+  - "Granny Smith"
+  - "Sculpt people"
+  - "Construction Simulator 2014"
+  - "Infinite Flight - Flight Simulator"
+  - "Blob Runner 3D"
+  - "The Room"
+  - "My Story - Mansion Makeover"
+  - "Stick Clash"
+  - "Evertale"
+  - "Tricky Track 3D"
+  - "Human: Fall Flat"
+  - "Perfect Date 3D"
+  - "Impostor vs Crewmate - Free Game Offline"
+  - "Water Sort Puzzle Color"
+  - "Going Balls"
+  - "Bloons TD 6"
+  - "Pixel Rush - Epic Obstacle Course Game"
+  - "Five Nights at Freddy's"
+  - "Rayman Fiesta Run"
+  - "Type Spin"
+  - "Geometry Dash"
+  - "Puzzle King - Puzzle Games Collection"
+  - "Thief Puzzle"
+  - "Pencil Rush 3D"
+  - "Phone Case DIY"

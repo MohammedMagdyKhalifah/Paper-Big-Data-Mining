@@ -1,0 +1,95 @@
+{
+  "n": 801,
+  "e2e_macro_f1": 0.6811,
+  "gate_macro_f1": 0.923,
+  "category_macro_f1": 0.7235,
+  "e2e_accuracy": 0.8365,
+  "per_class_e2e": {
+    "NO": {
+      "precision": 0.944,
+      "recall": 0.9343,
+      "f1": 0.9391,
+      "support": 487
+    },
+    "AUTH": {
+      "precision": 0.8793,
+      "recall": 0.75,
+      "f1": 0.8095,
+      "support": 68
+    },
+    "AVAIL": {
+      "precision": 0.7826,
+      "recall": 0.878,
+      "f1": 0.8276,
+      "support": 82
+    },
+    "PERF": {
+      "precision": 0.8,
+      "recall": 0.5,
+      "f1": 0.6154,
+      "support": 8
+    },
+    "TRANS": {
+      "precision": 0.4706,
+      "recall": 0.4706,
+      "f1": 0.4706,
+      "support": 34
+    },
+    "UX": {
+      "precision": 0.5,
+      "recall": 0.5135,
+      "f1": 0.5067,
+      "support": 37
+    },
+    "OTHER": {
+      "precision": 0.5761,
+      "recall": 0.6235,
+      "f1": 0.5989,
+      "support": 85
+    }
+  },
+  "per_class_category": {
+    "AUTH": {
+      "precision": 0.9298,
+      "recall": 0.7794,
+      "f1": 0.848,
+      "support": 68
+    },
+    "AVAIL": {
+      "precision": 0.7912,
+      "recall": 0.878,
+      "f1": 0.8324,
+      "support": 82
+    },
+    "PERF": {
+      "precision": 0.8,
+      "recall": 0.5,
+      "f1": 0.6154,
+      "support": 8
+    },
+    "TRANS": {
+      "precision": 0.7742,
+      "recall": 0.7059,
+      "f1": 0.7385,
+      "support": 34
+    },
+    "UX": {
+      "precision": 0.6316,
+      "recall": 0.6486,
+      "f1": 0.64,
+      "support": 37
+    },
+    "OTHER": {
+      "precision": 0.6413,
+      "recall": 0.6941,
+      "f1": 0.6667,
+      "support": 85
+    }
+  },
+  "recall_TRANS": 0.7059,
+  "recall_UX": 0.6486,
+  "temperature": 1.65,
+  "train_minutes": 3.36,
+  "best_epoch": 6,
+  "mps_driver_mem_gb_end": 3.57
+}

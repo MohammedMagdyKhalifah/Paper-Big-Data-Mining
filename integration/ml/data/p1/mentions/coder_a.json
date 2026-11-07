@@ -1,0 +1,2356 @@
+{
+"meta": {
+"coder_a_model": "sonnet",
+"coder_b_model": "fable",
+"guide": "prompt in p1-mention-annotation workflow (registry v1 list + 5 rules), copied in reports/p1_mention_guide.md",
+"blind": "coders saw id+text only (no detector output, stratum or app name)",
+"provenance": "AI-assisted reference labels, NOT human gold"
+},
+"labels": [
+{
+"id": "m0000",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0001",
+"systems": [
+"sakani"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0002",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0003",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0004",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0005",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0006",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0007",
+"systems": [],
+"uncertain_ids": [
+"gosi"
+],
+"unregistered": []
+},
+{
+"id": "m0008",
+"systems": [],
+"uncertain_ids": [
+"ehsan"
+],
+"unregistered": []
+},
+{
+"id": "m0009",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0010",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0011",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": [
+"جوجل"
+]
+},
+{
+"id": "m0012",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0013",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0014",
+"systems": [
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0015",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0016",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0017",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0018",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0019",
+"systems": [
+"eatmarna",
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0020",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0021",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0022",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0023",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0024",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0025",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0026",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0027",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0028",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0029",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0030",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0031",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0032",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0033",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0034",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0035",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0036",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0037",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0038",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0039",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0040",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0041",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0042",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0043",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0044",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0045",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0046",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0047",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0048",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0049",
+"systems": [
+"citizen_account",
+"gosi"
+],
+"uncertain_ids": [],
+"unregistered": [
+"ساند"
+]
+},
+{
+"id": "m0050",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0051",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0052",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0053",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0054",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0055",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0056",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0057",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0058",
+"systems": [
+"eatmarna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0059",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0060",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0061",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0062",
+"systems": [
+"madrasati",
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0063",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0064",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0065",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": [
+"خدماتي"
+]
+},
+{
+"id": "m0066",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0067",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0068",
+"systems": [
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0069",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0070",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0071",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0072",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0073",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0074",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0075",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0076",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0077",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0078",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": [
+"واصل"
+]
+},
+{
+"id": "m0079",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0080",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0081",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0082",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0083",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0084",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0085",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0086",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0087",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": [
+"تيمز"
+]
+},
+{
+"id": "m0088",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0089",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0090",
+"systems": [
+"gosi"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0091",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0092",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0093",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0094",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0095",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": [
+"قوقل",
+"تيمز"
+]
+},
+{
+"id": "m0096",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0097",
+"systems": [
+"absher",
+"tawakkalna",
+"eatmarna",
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0098",
+"systems": [
+"sakani"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0099",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0100",
+"systems": [
+"taminati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0101",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0102",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0103",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0104",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0105",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0106",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0107",
+"systems": [
+"tabaud"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0108",
+"systems": [
+"asefni"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0109",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0110",
+"systems": [
+"mawared"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0111",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0112",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0113",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0114",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0115",
+"systems": [
+"sehhaty",
+"tetamman"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0116",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0117",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0118",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0119",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0120",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0121",
+"systems": [],
+"uncertain_ids": [
+"balady"
+],
+"unregistered": []
+},
+{
+"id": "m0122",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0123",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0124",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0125",
+"systems": [
+"tetamman"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0126",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0127",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0128",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0129",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0130",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0131",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0132",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0133",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0134",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0135",
+"systems": [
+"sakani"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0136",
+"systems": [
+"sakani"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0137",
+"systems": [
+"asefni"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0138",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0139",
+"systems": [
+"sakani"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0140",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0141",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0142",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0143",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0144",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0145",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0146",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0147",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0148",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0149",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0150",
+"systems": [
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0151",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0152",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0153",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0154",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0155",
+"systems": [
+"absher",
+"tawakkalna",
+"eatmarna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0156",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0157",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0158",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0159",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0160",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0161",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0162",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0163",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0164",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0165",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0166",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0167",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0168",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0169",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0170",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0171",
+"systems": [],
+"uncertain_ids": [
+"kollona_amn"
+],
+"unregistered": []
+},
+{
+"id": "m0172",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0173",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0174",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0175",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0176",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0177",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0178",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0179",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0180",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0181",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0182",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0183",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0184",
+"systems": [
+"tabaud"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0185",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0186",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0187",
+"systems": [],
+"uncertain_ids": [
+"tawakkalna"
+],
+"unregistered": []
+},
+{
+"id": "m0188",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0189",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0190",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0191",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0192",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0193",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0194",
+"systems": [
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0195",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0196",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0197",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0198",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0199",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0200",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0201",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0202",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0203",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0204",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0205",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0206",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0207",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0208",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0209",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": [
+"حافز"
+]
+},
+{
+"id": "m0210",
+"systems": [
+"tetamman"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0211",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0212",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0213",
+"systems": [
+"sakani"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0214",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0215",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0216",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0217",
+"systems": [
+"eatmarna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0218",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0219",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0220",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0221",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0222",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0223",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0224",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0225",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0226",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0227",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0228",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0229",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": [
+"مرسول"
+]
+},
+{
+"id": "m0230",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": [
+"ببجي"
+]
+},
+{
+"id": "m0231",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0232",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0233",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0234",
+"systems": [
+"absher",
+"watani",
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0235",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0236",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0237",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0238",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0239",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0240",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0241",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0242",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0243",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0244",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0245",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0246",
+"systems": [
+"tawakkalna",
+"tetamman",
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0247",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0248",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0249",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0250",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0251",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0252",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0253",
+"systems": [
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0254",
+"systems": [],
+"uncertain_ids": [
+"musaned"
+],
+"unregistered": []
+},
+{
+"id": "m0255",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0256",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0257",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0258",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0259",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0260",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0261",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0262",
+"systems": [
+"absher",
+"tawakkalna",
+"eatmarna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0263",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0264",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0265",
+"systems": [],
+"uncertain_ids": [
+"ehsan"
+],
+"unregistered": []
+},
+{
+"id": "m0266",
+"systems": [],
+"uncertain_ids": [
+"kollona_amn"
+],
+"unregistered": []
+},
+{
+"id": "m0267",
+"systems": [
+"eatmarna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0268",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0269",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0270",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0271",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0272",
+"systems": [
+"asefni"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0273",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0274",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0275",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0276",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": [
+"سكليف"
+]
+},
+{
+"id": "m0277",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0278",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0279",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0280",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0281",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0282",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0283",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0284",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0285",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0286",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0287",
+"systems": [
+"najiz"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0288",
+"systems": [
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0289",
+"systems": [
+"kollona_amn"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0290",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0291",
+"systems": [
+"tetamman"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0292",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": [
+"نافتيل"
+]
+},
+{
+"id": "m0293",
+"systems": [],
+"uncertain_ids": [
+"balady"
+],
+"unregistered": []
+},
+{
+"id": "m0294",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0295",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0296",
+"systems": [
+"tawakkalna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0297",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0298",
+"systems": [
+"sehhaty",
+"mawid",
+"tabaud",
+"tawakkalna",
+"tetamman"
+],
+"uncertain_ids": [],
+"unregistered": [
+"صحة"
+]
+},
+{
+"id": "m0299",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0300",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0301",
+"systems": [],
+"uncertain_ids": [
+"tetamman"
+],
+"unregistered": []
+},
+{
+"id": "m0302",
+"systems": [
+"tetamman"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0303",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0304",
+"systems": [
+"asefni"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0305",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0306",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0307",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0308",
+"systems": [
+"saudi_post"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0309",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0310",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0311",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0312",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0313",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0314",
+"systems": [
+"eatmarna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0315",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0316",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0317",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0318",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0319",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0320",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0321",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0322",
+"systems": [],
+"uncertain_ids": [
+"kollona_amn"
+],
+"unregistered": []
+},
+{
+"id": "m0323",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0324",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0325",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0326",
+"systems": [
+"sehhaty"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0327",
+"systems": [
+"absher"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0328",
+"systems": [
+"tawakkalna",
+"eatmarna"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0329",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0330",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0331",
+"systems": [
+"nafath"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0332",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0333",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0334",
+"systems": [
+"asefni"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0335",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0336",
+"systems": [
+"madrasati"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0337",
+"systems": [
+"citizen_account"
+],
+"uncertain_ids": [],
+"unregistered": []
+},
+{
+"id": "m0338",
+"systems": [],
+"uncertain_ids": [],
+"unregistered": []
+}
+]
+}

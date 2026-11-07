@@ -1,0 +1,5 @@
+# A4 model-independent sampling lexicons (applied to P1-normalised text; substring match).
+# Used ONLY to enrich sampling strata; never as model features or labels.
+version: 1
+trans: [دفع, الدفع, سداد, اسدد, تسديد, فاتور, خصم, المبلغ, مبلغ, فلوس, رصيد, استرجاع, استرداد, تحويل, بطاقه, مدي, ابل باي, apple pay, visa, فيزا, شحن الرصيد, الطلب ما, ما اكتمل, لم يكتمل, حجز, احجز, الحجز, موعد, المعامله, تقديم الطلب, ارسال الطلب, payment, refund, transaction]
+ux: [واجهه, الواجهه, تصميم, التصميم, زر, الزر, ايقونه, الخط, خط صغير, القائمه, ترتيب, صعب الاستخدام, معقد, مو واضح, غير واضح, ما القي, مالقيت, ما لقيت, وين القي, الوضع الليلي, اللغه, الانجليزي, تنسيق, الصفحه الرئيسيه, الشاشه مقطوعه, الشكل, interface, design, button, dark mode, layout]

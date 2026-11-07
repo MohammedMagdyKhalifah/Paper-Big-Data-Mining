@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+data/raw/
+data/interim/
+artifacts/*.joblib
+.worktrees/
+artifacts/a4/**/*.safetensors
+artifacts/a4/**/*.joblib
+artifacts/a4/**/*.bin
+data/a4/cache/
+.venv-paddle/
+artifacts/ocr/

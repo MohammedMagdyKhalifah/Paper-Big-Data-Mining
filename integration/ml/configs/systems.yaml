@@ -1,0 +1,171 @@
+# Registry of digital systems for explicit-mention detection (ml/src/systems.py). Add a system by adding an entry;
+# no model retraining is needed. Matching is on normalised text (alif/ya/ta-marbuta/diacritics), word-bounded,
+# Arabic proclitics و/ف/ب/ل/ك allowed before a name.
+#
+#   aliases      : names that identify the system on their own (multi-word Arabic names, Latin spellings)
+#   ambiguous    : names that are also ordinary Arabic words/phrases ("ابشر" = "sure", "صحتي" = "my health").
+#                  Accepted only with context: a cue word just before (تطبيق/منصة/موقع/... see context_cues),
+#                  or the name in quotes. Otherwise reported as an ambiguous possible mention, NOT identified.
+#   exclude_after: phrases that, right after an ambiguous name, show the ordinary meaning (توكلنا على الله)
+#
+# Scope v1: Saudi government / public digital services (the AURA gov apps + the services named in the P1 brief).
+# Registry author: Claude Code from public service names; frozen as v1 before the P1 mention evaluation.
+version: "1.1"   # 1.1 = v1 + aliases found in the v1 error analysis (reports/p1_report.md); v1 = commit a3035f4
+
+context_cues:          # within the 2 tokens before an ambiguous name
+  ar: [تطبيق, التطبيق, تطبيقات, برنامج, البرنامج, منصة, المنصة, منصه, المنصه, موقع, الموقع, بوابة, البوابة, بوابه, البوابه, نظام, خدمة, خدمات, حساب]
+  en: [app, application, platform, portal, website, system]
+
+generic_references:    # refer to *a* system without naming it
+  ar: [التطبيق, البرنامج, المنصة, المنصه, الموقع, البوابة, البوابه, النظام, الابلكيشن, الأبلكيشن]
+  en: [the app, this app, the application, the website, the platform, the system]
+
+systems:
+  - id: absher
+    name_ar: أبشر
+    name_en: Absher
+    aliases: ["أبشر أفراد", "أبشر أعمال", Absher]
+    ambiguous: [أبشر]
+  - id: nafath
+    name_ar: نفاذ
+    name_en: Nafath
+    aliases: ["النفاذ الوطني", "النفاذ الوطني الموحد", "النفاذ الموحد", "بوابة النفاذ", Nafath, Nafaz]
+    ambiguous: [نفاذ, النفاذ]
+  - id: tawakkalna
+    name_ar: توكلنا
+    name_en: Tawakkalna
+    aliases: [Tawakkalna, Tawakalna, "توكلنا خدمات"]
+    ambiguous: [توكلنا]
+    exclude_after: [على, ع]
+  - id: sehhaty
+    name_ar: صحتي
+    name_en: Sehhaty
+    aliases: [Sehhaty, Sehaty, Sihhaty]
+    ambiguous: [صحتي]
+  - id: najiz
+    name_ar: ناجز
+    name_en: Najiz
+    aliases: [Najiz, Najez]
+    ambiguous: [ناجز]
+  - id: mawid
+    name_ar: موعد
+    name_en: Mawid
+    aliases: [Mawid, Mawed]
+    ambiguous: [موعد]
+  - id: madrasati
+    name_ar: مدرستي
+    name_en: Madrasati
+    aliases: [Madrasati]
+    ambiguous: [مدرستي]
+  - id: qiwa
+    name_ar: قوى
+    name_en: Qiwa
+    aliases: [Qiwa]
+    ambiguous: [قوى]
+  - id: musaned
+    name_ar: مساند
+    name_en: Musaned
+    aliases: [Musaned]
+    ambiguous: [مساند]
+  - id: balady
+    name_ar: بلدي
+    name_en: Balady
+    aliases: [Balady, Baladi]
+    ambiguous: [بلدي]
+  - id: tabaud
+    name_ar: تباعد
+    name_en: Tabaud
+    aliases: [Tabaud]
+    ambiguous: [تباعد]
+  - id: tetamman
+    name_ar: تطمن
+    name_en: Tetamman
+    aliases: [Tetamman, Tataman]
+    ambiguous: [تطمن, تطمنا]
+  - id: asefni
+    name_ar: أسعفني
+    name_en: Asefni
+    aliases: [Asefni, Asafny]
+    ambiguous: [أسعفني]
+  - id: eatmarna
+    name_ar: اعتمرنا
+    name_en: Eatmarna
+    aliases: [Eatmarna]
+    ambiguous: [اعتمرنا]
+  - id: kollona_amn
+    name_ar: كلنا أمن
+    name_en: Kollona Amn
+    aliases: ["كلنا أمن", "Kollona Amn", "Kolluna Amn"]
+  - id: citizen_account
+    name_ar: حساب المواطن
+    name_en: Citizen Account
+    aliases: ["حساب المواطن", "Citizen Account"]
+  - id: taminati
+    name_ar: تأميناتي
+    name_en: Taminati
+    aliases: [Taminati]
+    ambiguous: [تأميناتي]
+  - id: gosi
+    name_ar: التأمينات الاجتماعية
+    name_en: GOSI
+    aliases: ["التأمينات الاجتماعية", GOSI]
+  - id: saudi_post
+    name_ar: البريد السعودي
+    name_en: Saudi Post (SPL)
+    aliases: ["البريد السعودي", "Saudi Post"]
+    ambiguous: [سبل]
+  - id: sakani
+    name_ar: سكني
+    name_en: Sakani
+    aliases: [Sakani]
+    ambiguous: [سكني]
+  - id: mawared
+    name_ar: موارد
+    name_en: Mawared
+    aliases: [Mawared]
+    ambiguous: [موارد]
+  - id: watani
+    name_ar: وطني
+    name_en: Watani
+    aliases: [Watani, Watany]
+    ambiguous: [وطني]
+  - id: muqeem
+    name_ar: مقيم
+    name_en: Muqeem
+    aliases: [Muqeem]
+    ambiguous: [مقيم]
+  - id: etimad
+    name_ar: اعتماد
+    name_en: Etimad
+    aliases: [Etimad]
+    ambiguous: [اعتماد]
+  - id: ehsan
+    name_ar: إحسان
+    name_en: Ehsan
+    aliases: [Ehsan]
+    ambiguous: [إحسان]
+  - id: sadad
+    name_ar: سداد
+    name_en: SADAD
+    aliases: [SADAD]
+    ambiguous: [سداد]
+  - id: zakaty
+    name_ar: زكاتي
+    name_en: Zakaty
+    aliases: [Zakaty]
+    ambiguous: [زكاتي]
+  - id: ejar
+    name_ar: إيجار
+    name_en: Ejar
+    aliases: [Ejar]
+    ambiguous: [إيجار]
+  - id: jadarat
+    name_ar: جدارات
+    name_en: Jadarat
+    aliases: [Jadarat]
+    ambiguous: [جدارات]
+  - id: wasfaty
+    name_ar: وصفتي
+    name_en: Wasfaty
+    aliases: [Wasfaty]
+    ambiguous: [وصفتي]

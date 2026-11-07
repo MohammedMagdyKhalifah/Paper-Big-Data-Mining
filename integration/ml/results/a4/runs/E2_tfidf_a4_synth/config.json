@@ -1,0 +1,19 @@
+{
+  "gate": {
+    "variant": "P0",
+    "features": "char25",
+    "min_df": 1,
+    "C": 10.0,
+    "class_weight": "balanced"
+  },
+  "category": {
+    "variant": "P1",
+    "features": "word12+char25",
+    "min_df": 2,
+    "C": 1.0,
+    "class_weight": "balanced",
+    "learner": "svc"
+  },
+  "n_train": 5106,
+  "synthetic": true
+}

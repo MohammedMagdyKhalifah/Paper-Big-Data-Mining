@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "sha256": "451ab15d517fdc3c4e765acd17884c37434c1209abaeb7a0730258bca6dff4fd",
+  "n": 2000,
+  "counts": {
+    "train": 1399,
+    "val": 300,
+    "test": 301
+  },
+  "by_label": {
+    "test": {
+      "AUTH": 29,
+      "AVAIL": 39,
+      "NO": 168,
+      "OTHER": 34,
+      "PERF": 6,
+      "TRANS": 8,
+      "UNCLEAR": 6,
+      "UX": 11
+    },
+    "train": {
+      "AUTH": 136,
+      "AVAIL": 181,
+      "NO": 785,
+      "OTHER": 154,
+      "PERF": 25,
+      "TRANS": 34,
+      "UNCLEAR": 28,
+      "UX": 56
+    },
+    "val": {
+      "AUTH": 29,
+      "AVAIL": 39,
+      "NO": 169,
+      "OTHER": 33,
+      "PERF": 5,
+      "TRANS": 7,
+      "UNCLEAR": 6,
+      "UX": 12
+    }
+  }
+}

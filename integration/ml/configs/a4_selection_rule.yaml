@@ -1,0 +1,30 @@
+# A4 pre-registered experiment + selection protocol (committed BEFORE any A4 model is trained).
+version: 1
+frozen_holdout: data/a4/holdout_sample.parquet   # ids sha256 65fb9459... ; labels via guide v1.1, sonnet+fable+opus
+holdout_use: "evaluated ONCE per candidate after selection is frozen in results/a4/selection.json; never used for tuning"
+v1_test: "kept out of all A4 training; may be reported as a secondary, NON-blind comparison only"
+
+splits:
+  pool: "v1 train+val (labels after re-review) + 4,000 A4 training expansion"
+  method: "StratifiedGroupKFold(n_splits=7, shuffle, seed 42) on label_final grouped by dup_group; 1 fold = A4 validation (~14%), rest = A4 train"
+  synthetic: "TRAINING only (each synthetic item its own group); validation and holdout are real-only"
+
+metrics_on_validation:
+  primary: e2e_macro_f1        # 7-way: NO + six categories (UNCLEAR excluded)
+  secondary: [gate_macro_f1, category_macro_f1, recall_TRANS, recall_UX]
+
+candidates:
+  E0_baseline_v1: "artifact tfidf-baseline-v1 unchanged (reference)"
+  E1_tfidf_a4: "v1 architecture (two-stage char TF-IDF LR) re-tuned on A4 train/val, small grid"
+  E2_tfidf_a4_synth: "E1 best config + synthetic training data"
+  E3_marbert: "UBC-NLP/MARBERTv2 fine-tune, 7-way head; grid lr {2e-5,4e-5} x loss {ce, ce_sqrt_class_weights}; max 6 epochs, early stopping on val e2e macro-F1 (patience 2); best config re-run with 3 seeds"
+  E4_marbert_synth: "E3 best config + synthetic (1 seed first; 3 seeds only if it wins on val)"
+  E5_e5_lr: "intfloat/multilingual-e5-base frozen mean-pooled embeddings + LogisticRegression 7-way (C grid)"
+
+selection_rule:
+  - "rank candidates by validation e2e_macro_f1 (transformer: mean over 3 seeds)"
+  - "a transformer replaces the TF-IDF candidate only if mean val e2e_macro_f1 gain >= 0.02 AND its gate_macro_f1 is not lower by more than 0.01"
+  - "synthetic augmentation is retained only if it improves val e2e_macro_f1 by >= 0.005 for the same architecture"
+  - "ties (< 0.005) -> cheaper model"
+  - "the selected seed/run for export = the seed with the median val e2e_macro_f1 among the 3 (not the best)"
+thresholds: "needs_review thresholds chosen on validation for ~0.90 precision of automatic decisions (same rule as v1)"

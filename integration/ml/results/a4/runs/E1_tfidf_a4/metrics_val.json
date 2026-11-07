@@ -1,0 +1,93 @@
+{
+  "n": 801,
+  "e2e_macro_f1": 0.5961,
+  "gate_macro_f1": 0.8743,
+  "category_macro_f1": 0.6757,
+  "e2e_accuracy": 0.7878,
+  "per_class_e2e": {
+    "NO": {
+      "precision": 0.9014,
+      "recall": 0.9014,
+      "f1": 0.9014,
+      "support": 487
+    },
+    "AUTH": {
+      "precision": 0.7536,
+      "recall": 0.7647,
+      "f1": 0.7591,
+      "support": 68
+    },
+    "AVAIL": {
+      "precision": 0.7848,
+      "recall": 0.7561,
+      "f1": 0.7702,
+      "support": 82
+    },
+    "PERF": {
+      "precision": 0.5,
+      "recall": 0.375,
+      "f1": 0.4286,
+      "support": 8
+    },
+    "TRANS": {
+      "precision": 0.3548,
+      "recall": 0.3235,
+      "f1": 0.3385,
+      "support": 34
+    },
+    "UX": {
+      "precision": 0.4324,
+      "recall": 0.4324,
+      "f1": 0.4324,
+      "support": 37
+    },
+    "OTHER": {
+      "precision": 0.5217,
+      "recall": 0.5647,
+      "f1": 0.5424,
+      "support": 85
+    }
+  },
+  "per_class_category": {
+    "AUTH": {
+      "precision": 0.8594,
+      "recall": 0.8088,
+      "f1": 0.8333,
+      "support": 68
+    },
+    "AVAIL": {
+      "precision": 0.8267,
+      "recall": 0.7561,
+      "f1": 0.7898,
+      "support": 82
+    },
+    "PERF": {
+      "precision": 0.625,
+      "recall": 0.625,
+      "f1": 0.625,
+      "support": 8
+    },
+    "TRANS": {
+      "precision": 0.6571,
+      "recall": 0.6765,
+      "f1": 0.6667,
+      "support": 34
+    },
+    "UX": {
+      "precision": 0.5278,
+      "recall": 0.5135,
+      "f1": 0.5205,
+      "support": 37
+    },
+    "OTHER": {
+      "precision": 0.5833,
+      "recall": 0.6588,
+      "f1": 0.6188,
+      "support": 85
+    }
+  },
+  "recall_TRANS": 0.6765,
+  "recall_UX": 0.5135,
+  "val_gate_stage_macro_f1": 0.8743,
+  "val_category_stage_macro_f1": 0.6757
+}

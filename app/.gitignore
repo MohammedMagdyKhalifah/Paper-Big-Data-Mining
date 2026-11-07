@@ -1,0 +1,17 @@
+backend/.venv/
+backend/storage/*
+!backend/storage/.gitkeep
+__pycache__/
+.pytest_cache/
+*.pyc
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+.env
+*.log
+backend/pypi-probe.json
+frontend/.npm-cache/
+backend/.wheelhouse/
+.DS_Store
+*.tsbuildinfo

@@ -1,0 +1,16 @@
+# Lexical cues of an on-screen ERROR MESSAGE (ml/analyze.py). A match is a signal that the text looks like a
+# system error screen; it is NOT a diagnosis of the failure or its root cause. Matched on normalised text
+# (alif/ya/ta-marbuta/diacritics), word-bounded. Author: Claude Code (P1), hand-written, not tuned on eval data.
+version: 1
+ar: [حدث خطأ, خطأ, عذراً, عذرا, تعذر, فشل, فشلت, غير متاح, غير متاحة, انتهت صلاحية الجلسة, انتهت الجلسة,
+     لا يوجد اتصال, تحقق من اتصالك, حاول مرة أخرى, حاول لاحقاً, يرجى المحاولة, رمز الخطأ, توقف التطبيق,
+     غير صحيح, غير صحيحة, متوقفة للصيانة, تحت الصيانة, لا يمكن إتمام, انتهت المهلة]
+en: [error, failed, failure, something went wrong, try again, timed out, timeout, unavailable, not available,
+     network error, no internet connection, session expired, invalid, incorrect, has stopped, server error]
+# First-person / narrative markers: text that contains one is a user's own description (a complaint that happens to
+# mention an error), not a bare error screen. Added in P1 after 6/36 user-text screenshots in the SYNTHETIC dev set
+# were flagged as error screens; checked afterwards on real AURA texts (reports/p1_report.md).
+narrative_markers:
+  ar: [أنا, انا, حاولت, أحاول, احاول, عندي, ما أقدر, ما اقدر, ما قدرت, ماقدرت, أقدر, اقدر, قدرت, أبغى, ابغى, ابي, أبي,
+       ليش, يطلع لي, يطلعلي, يطلع, كل ما, كل مرة, صار, صارلي, من أمس, والله, لي, عندنا, سويت, دخلت, حملت, نزلت]
+  en: [i, my, me, "i'm", "i've", "can't", cannot, keeps]

@@ -1,0 +1,162 @@
+{
+  "provenance": "Actual local EasyOCR + unchanged a4-marbert-v1 output on Claude synthetic err00.png, UI regression fixture only; no accuracy claim. 2026-10-31.",
+  "image": {
+    "schema_version": "p1-analysis-v1",
+    "analysis_kind": "error_screen_signal",
+    "input": {
+      "has_user_text": false,
+      "has_image": true,
+      "text_source": "ocr",
+      "classified_text": "أبشر\nحدث خطأ غير متوقع\nعذرا, حدث خطأ أثناء معالجة طلبك .\nيرجى المحاولة لاحقاً.\nرمز الخطأ : 500\nحسناً"
+    },
+    "prediction": {
+      "is_complaint": true,
+      "complaint_score": 0.9792,
+      "category": "TRANS",
+      "category_score": 0.4227,
+      "needs_review": true,
+      "model_version": "a4-marbert-v1"
+    },
+    "systems": {
+      "status": "ambiguous",
+      "systems": [],
+      "possible_mentions": [
+        {
+          "system_id": "absher",
+          "text": "أبشر",
+          "start": 0,
+          "end": 4,
+          "reason": "ambiguous name without context (also an ordinary word)"
+        }
+      ],
+      "generic_references": [],
+      "registry_version": "1.1",
+      "method": "registry rules v1 (explicit names only; not a diagnosis)"
+    },
+    "signals": {
+      "error_message_cues": [
+        {
+          "text": "حدث خطأ",
+          "start": 5,
+          "end": 12,
+          "cue": "حدث خطا"
+        },
+        {
+          "text": "عذرا",
+          "start": 23,
+          "end": 27,
+          "cue": "عذرا"
+        },
+        {
+          "text": "حدث خطأ",
+          "start": 29,
+          "end": 36,
+          "cue": "حدث خطا"
+        },
+        {
+          "text": "يرجى المحاولة",
+          "start": 57,
+          "end": 70,
+          "cue": "يرجي المحاوله"
+        },
+        {
+          "text": "رمز الخطأ",
+          "start": 79,
+          "end": 88,
+          "cue": "رمز الخطا"
+        }
+      ],
+      "narrative_markers": [],
+      "needs_user_context": true,
+      "ocr_needs_review": false
+    },
+    "ocr": {
+      "status": "ok",
+      "text": "أبشر\nحدث خطأ غير متوقع\nعذرا, حدث خطأ أثناء معالجة طلبك .\nيرجى المحاولة لاحقاً.\nرمز الخطأ : 500\nحسناً",
+      "lines": [
+        {
+          "text": "أبشر",
+          "confidence": 0.9911,
+          "bbox": [
+            454,
+            30,
+            549,
+            84
+          ]
+        },
+        {
+          "text": "حدث خطأ غير متوقع",
+          "confidence": 0.8606,
+          "bbox": [
+            542,
+            287,
+            922,
+            350
+          ]
+        },
+        {
+          "text": "عذرا, حدث خطأ أثناء معالجة طلبك .",
+          "confidence": 0.6515,
+          "bbox": [
+            508,
+            376,
+            924,
+            429
+          ]
+        },
+        {
+          "text": "يرجى المحاولة لاحقاً.",
+          "confidence": 0.6053,
+          "bbox": [
+            681,
+            433,
+            923,
+            489
+          ]
+        },
+        {
+          "text": "رمز الخطأ : 500",
+          "confidence": 0.7682,
+          "bbox": [
+            724,
+            499,
+            923,
+            543
+          ]
+        },
+        {
+          "text": "حسناً",
+          "confidence": 0.8772,
+          "bbox": [
+            462,
+            604,
+            535,
+            648
+          ]
+        }
+      ],
+      "mean_confidence": 0.7923,
+      "low_confidence": false,
+      "error": null,
+      "engine": "easyocr-1.7.2/ar+en/canvas1600",
+      "image": {
+        "format": "PNG",
+        "width": 1000,
+        "height": 2000
+      },
+      "elapsed_ms": 6051.0,
+      "corrected_text": null,
+      "used_for_classification": "ocr"
+    },
+    "notes": [
+      "Screenshot of an error message without the user's own description: the model output is attached, but the screen alone does not say what the user was doing; ask for context.",
+      "A registered system name appears only as an ordinary word without context: not identified."
+    ],
+    "timing_ms": {
+      "ocr_ms": 6051.0,
+      "classify_ms": 2287.6,
+      "systems_ms": 12.22,
+      "total_ms": 8357.6
+    }
+  }
+}

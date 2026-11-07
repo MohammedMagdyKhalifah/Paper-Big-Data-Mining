@@ -1,0 +1,1 @@
+{"temperature": 1.7, "max_len": 128, "labels": ["NO", "AUTH", "AVAIL", "PERF", "TRANS", "UX", "OTHER"], "run_id": "E4_marbert_synth_s13"}

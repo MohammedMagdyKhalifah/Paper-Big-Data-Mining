@@ -1,0 +1,35 @@
+{
+  "raw_total": 32600,
+  "raw_by_source": {
+    "aura_sentiment": 29700,
+    "aura_classification_v2": 2900
+  },
+  "excluded_by_reason": {
+    "not_predominantly_arabic": 6,
+    "too_short": 4
+  },
+  "dup_groups": 29062,
+  "records_in_multi_member_groups": 4998,
+  "largest_group_size": 465,
+  "near_duplicate_pairs": 2517,
+  "eligible_non_game": 23584,
+  "eligible_unique_groups": 21077,
+  "annotation_sample": {
+    "gov": 1000,
+    "nongov": 700,
+    "cls_external": 300
+  },
+  "annotation_sample_by_domain": {
+    "gov": 1113,
+    "consumer_other": 771,
+    "commerce_delivery": 75,
+    "finance": 20,
+    "utility": 13,
+    "telecom": 8
+  },
+  "annotation_sample_sentiment": {
+    "negative": 1275,
+    "positive": 427,
+    "null": 298
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "model": "intfloat/multilingual-e5-base@d128750 (frozen) + LogisticRegression",
+  "C": 30,
+  "class_weight": "none"
+}

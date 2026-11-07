@@ -1,0 +1,16 @@
+{"id": "T2506", "is_complaint": "no", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2520", "is_complaint": "no", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2540", "is_complaint": "yes", "category": "OTHER", "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2559", "is_complaint": "yes", "category": "OTHER", "multi_issue": true, "negation": false, "uncertain": true}
+{"id": "T2568", "is_complaint": "no", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2572", "is_complaint": "no", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2575", "is_complaint": "unclear", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2578", "is_complaint": "yes", "category": "OTHER", "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2591", "is_complaint": "no", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2623", "is_complaint": "yes", "category": "TRANS", "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2637", "is_complaint": "no", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2643", "is_complaint": "yes", "category": "OTHER", "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2657", "is_complaint": "no", "category": null, "multi_issue": false, "negation": false, "uncertain": false}
+{"id": "T2682", "is_complaint": "yes", "category": "OTHER", "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2689", "is_complaint": "unclear", "category": null, "multi_issue": false, "negation": false, "uncertain": true}
+{"id": "T2699", "is_complaint": "yes", "category": "AVAIL", "multi_issue": false, "negation": false, "uncertain": true}

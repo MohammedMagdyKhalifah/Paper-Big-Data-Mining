@@ -1,0 +1,14 @@
+# Optional portable OCR fallback (default engine on non-macOS). Heavy: ~6-8 GB peak RAM on 1000x2000 screenshots.
+# Models (285 MB) are fetched once into artifacts/ocr/easyocr: scripts/p1_fetch_ocr_models.sh --easyocr
+-r requirements-p1.txt
+easyocr==1.7.2
+torchvision==0.29.2
+opencv-python-headless==5.0.0.93
+scikit-image==0.26.0
+python-bidi==0.6.12
+shapely==2.2.0
+pyclipper==1.4.0
+ninja==1.13.2
+ImageIO==2.38.1
+tifffile==2026.10.15
+lazy-loader==0.6

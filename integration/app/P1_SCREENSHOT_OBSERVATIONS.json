@@ -1,0 +1,58 @@
+{
+  "source_page": "https://apps.apple.com/sa/app/absher-%D8%A3%D8%A8%D8%B4%D8%B1/id1004966456",
+  "collected_on": "2026-10-31",
+  "scope": "Qualitative smoke probes only, not OCR accuracy or complaint gold. Published UI images; no private field complaints available. Images/results are ignored local verification artifacts.",
+  "records": [
+    {
+      "file": "p1-published-0.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/75/52/b275525b-ac13-d33d-4b7c-fe9fcf16d93a/dffdddf6-d10e-4f61-901a-c74d3dfbee1a_EN-01.png/392x696bb.png",
+      "sha256": "95325aed2ec94f993ef49d167fb0b8e4f0d8fe95dd0153a4279cbc72db021e87",
+      "provenance": "NATIONAL INFORMATION CENTER developer-published App Store screenshot / promotional UI composition; not a field complaint capture and not human OCR gold",
+      "engine": "easyocr-1.7.2/ar+en/canvas1600",
+      "image": {
+        "format": "PNG",
+        "width": 392,
+        "height": 696
+      },
+      "analysis_kind": "not_complaint",
+      "systems_status": "identified",
+      "model_version": "a4-marbert-v1",
+      "is_demo": true,
+      "ocr_ms": 4286.4
+    },
+    {
+      "file": "p1-published-1.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/f4/bf/04f4bf50-ed0d-4335-2d5a-de9df2ef6b1c/6b50e6d0-8131-46f4-ad5a-81f4a9c6bc1c_1.png/576x768bb.png",
+      "sha256": "b5d214aeb0d72c1f249f53db0acf1fccaad68d686d18e5892021b9b854420280",
+      "provenance": "NATIONAL INFORMATION CENTER developer-published App Store screenshot / promotional UI composition; not a field complaint capture and not human OCR gold",
+      "engine": "easyocr-1.7.2/ar+en/canvas1600",
+      "image": {
+        "format": "PNG",
+        "width": 576,
+        "height": 768
+      },
+      "analysis_kind": "not_complaint",
+      "systems_status": "unknown",
+      "model_version": "a4-marbert-v1",
+      "is_demo": true,
+      "ocr_ms": 4342.5
+    },
+    {
+      "file": "p1-published-2.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5a/35/7c/5a357cbe-6d8a-6e20-8e44-3d3626cd4f10/f7c8c20e-38bd-44ea-a015-388bc98de742_2.png/576x768bb.png",
+      "sha256": "c57ed52b2c05b2bde4d2c25d18ffc995693f2bcdfc36242838e79f021d1d44e0",
+      "provenance": "NATIONAL INFORMATION CENTER developer-published App Store screenshot / promotional UI composition; not a field complaint capture and not human OCR gold",
+      "engine": "easyocr-1.7.2/ar+en/canvas1600",
+      "image": {
+        "format": "PNG",
+        "width": 576,
+        "height": 768
+      },
+      "analysis_kind": "complaint",
+      "systems_status": "unknown",
+      "model_version": "a4-marbert-v1",
+      "is_demo": true,
+      "ocr_ms": 10130.5
+    }
+  ]
+}

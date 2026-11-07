@@ -1,0 +1,86 @@
+# Local configuration and credentials (keep distributable examples)
+.env
+.env.*
+*.env
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+
+# macOS and editor state
+.DS_Store
+._*
+.AppleDouble/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Nested Git metadata and duplicate development worktrees
+.git
+.git/
+.worktrees/
+
+# Python environments, caches, packaging, and downloaded wheels
+.venv*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+.wheelhouse*/
+*.whl
+
+# JavaScript dependencies, caches, and generated builds
+node_modules*
+.npm-cache/
+.npm/
+.vite/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Local runtime databases, uploaded content, and recovery files
+**/backend/storage/*
+!**/backend/storage/.gitkeep
+**/backend/pypi-probe.json
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.pid
+
+# Downloaded raw data and reproducible intermediate corpora
+**/data/raw/
+**/data/interim/
+**/data/a4/cache/
+
+# Trained/downloaded weights; retain configs, tokenizers, manifests, and results
+*.joblib
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+**/artifacts/**/*.bin
+**/artifacts/ocr/
+
+# Local publishing artifacts
+/github-upload/
+/Paper-Big-Data-Mining-upload.zip

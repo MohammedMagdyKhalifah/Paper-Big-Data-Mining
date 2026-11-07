@@ -1,0 +1,33 @@
+{
+  "n_scanned": 1665,
+  "n_flagged": 239,
+  "flagged_by_given_label": {
+    "OTHER": 77,
+    "AVAIL": 41,
+    "NO": 37,
+    "UX": 35,
+    "TRANS": 19,
+    "AUTH": 16,
+    "PERF": 14
+  },
+  "flagged_given_to_pred": {
+    "OTHER->NO": 38,
+    "OTHER->AVAIL": 30,
+    "AVAIL->NO": 21,
+    "UX->NO": 18,
+    "NO->AVAIL": 14,
+    "PERF->NO": 13,
+    "AVAIL->OTHER": 12,
+    "UX->OTHER": 10,
+    "TRANS->NO": 10,
+    "NO->AUTH": 9,
+    "NO->OTHER": 8,
+    "OTHER->AUTH": 7,
+    "AUTH->NO": 7,
+    "AUTH->AVAIL": 6,
+    "AVAIL->AUTH": 6
+  },
+  "flag_rate_adjudicated": 0.33472803347280333,
+  "base_rate_adjudicated": 0.17477477477477477,
+  "oof_macro_f1_7way": 0.4652477733235381
+}

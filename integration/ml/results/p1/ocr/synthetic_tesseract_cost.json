@@ -1,0 +1,11 @@
+{
+  "engine": "tesseract-5.5.2/ara+eng/tessdata_best",
+  "n_images": 64,
+  "engine_load_s": 0.02,
+  "latency_ms_mean": 291.8,
+  "latency_ms_p50": 276.9,
+  "latency_ms_max": 628.0,
+  "peak_rss_mb": 191.7,
+  "peak_rss_child_mb": 158.7,
+  "device": "CPU (Apple M2 Max)"
+}

@@ -1,0 +1,9 @@
+# A4 environment only. Keep the original requirements.lock/.venv for V1 rollback.
+-r ../../ml/requirements-a4-inference.txt
+fastapi==0.121.2
+uvicorn==0.38.0
+SQLAlchemy==2.0.44
+pydantic==2.12.4
+python-multipart==0.0.20
+httpx==0.28.1
+pytest==9.2.0

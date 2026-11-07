@@ -1,0 +1,482 @@
+{
+  "set": "synthetic",
+  "synthetic": true,
+  "n_images": 64,
+  "engines": {
+    "easyocr": {
+      "engine": "easyocr-1.7.2/ar+en/canvas2560",
+      "all_text_images": {
+        "light": {
+          "n": 60,
+          "cer": 0.0351,
+          "wer": 0.1508
+        },
+        "letters": {
+          "n": 60,
+          "cer": 0.0215,
+          "wer": 0.0801
+        }
+      },
+      "by_variant": {
+        "clean_png": {
+          "n": 30,
+          "cer": 0.0285,
+          "wer": 0.1367
+        },
+        "degraded_jpg": {
+          "n": 30,
+          "cer": 0.0418,
+          "wer": 0.1649
+        }
+      },
+      "by_kind": {
+        "chat": {
+          "n": 12,
+          "cer": 0.033,
+          "wer": 0.1358
+        },
+        "error_screen": {
+          "n": 24,
+          "cer": 0.031,
+          "wer": 0.1477
+        },
+        "review": {
+          "n": 24,
+          "cer": 0.0385,
+          "wer": 0.158
+        }
+      },
+      "by_theme": {
+        "dark": {
+          "n": 30,
+          "cer": 0.0402,
+          "wer": 0.1935
+        },
+        "light": {
+          "n": 30,
+          "cer": 0.0303,
+          "wer": 0.1082
+        }
+      },
+      "by_font": {
+        "Arial": {
+          "n": 20,
+          "cer": 0.0386,
+          "wer": 0.1646
+        },
+        "Geeza Pro": {
+          "n": 20,
+          "cer": 0.0208,
+          "wer": 0.0871
+        },
+        "SF Arabic": {
+          "n": 20,
+          "cer": 0.0465,
+          "wer": 0.2034
+        }
+      },
+      "status_counts_text_images": {
+        "ok": 60,
+        "empty": 0,
+        "failed": 0
+      },
+      "no_text_images": {
+        "n": 4,
+        "returned_empty": 4,
+        "spurious_text": []
+      },
+      "cost": {
+        "engine": "easyocr-1.7.2/ar+en/canvas2560",
+        "n_images": 64,
+        "engine_load_s": 5.44,
+        "latency_ms_mean": 2656.3,
+        "latency_ms_p50": 3315.2,
+        "latency_ms_max": 4522.4,
+        "peak_rss_mb": 8099.4,
+        "peak_rss_child_mb": 0.0,
+        "device": "CPU (Apple M2 Max)"
+      }
+    },
+    "easyocr_canvas1600": {
+      "engine": "easyocr-1.7.2/ar+en/canvas1600",
+      "all_text_images": {
+        "light": {
+          "n": 60,
+          "cer": 0.0338,
+          "wer": 0.1508
+        },
+        "letters": {
+          "n": 60,
+          "cer": 0.0199,
+          "wer": 0.0768
+        }
+      },
+      "by_variant": {
+        "clean_png": {
+          "n": 30,
+          "cer": 0.0258,
+          "wer": 0.1367
+        },
+        "degraded_jpg": {
+          "n": 30,
+          "cer": 0.0418,
+          "wer": 0.1649
+        }
+      },
+      "by_kind": {
+        "chat": {
+          "n": 12,
+          "cer": 0.0319,
+          "wer": 0.1235
+        },
+        "error_screen": {
+          "n": 24,
+          "cer": 0.031,
+          "wer": 0.1611
+        },
+        "review": {
+          "n": 24,
+          "cer": 0.0362,
+          "wer": 0.1537
+        }
+      },
+      "by_theme": {
+        "dark": {
+          "n": 30,
+          "cer": 0.039,
+          "wer": 0.1848
+        },
+        "light": {
+          "n": 30,
+          "cer": 0.0287,
+          "wer": 0.1169
+        }
+      },
+      "by_font": {
+        "Arial": {
+          "n": 20,
+          "cer": 0.0369,
+          "wer": 0.1739
+        },
+        "Geeza Pro": {
+          "n": 20,
+          "cer": 0.0225,
+          "wer": 0.0935
+        },
+        "SF Arabic": {
+          "n": 20,
+          "cer": 0.0423,
+          "wer": 0.1862
+        }
+      },
+      "status_counts_text_images": {
+        "ok": 60,
+        "empty": 0,
+        "failed": 0
+      },
+      "no_text_images": {
+        "n": 4,
+        "returned_empty": 4,
+        "spurious_text": []
+      },
+      "cost": {
+        "engine": "easyocr-1.7.2/ar+en/canvas1600",
+        "n_images": 64,
+        "engine_load_s": 5.05,
+        "latency_ms_mean": 1820.8,
+        "latency_ms_p50": 1864.7,
+        "latency_ms_max": 3028.4,
+        "peak_rss_mb": 6347.6,
+        "peak_rss_child_mb": 0.0,
+        "device": "CPU (Apple M2 Max)"
+      }
+    },
+    "paddle": {
+      "engine": "paddleocr-3.7.0/ar",
+      "all_text_images": {
+        "light": {
+          "n": 60,
+          "cer": 0.0482,
+          "wer": 0.1247
+        },
+        "letters": {
+          "n": 60,
+          "cer": 0.0352,
+          "wer": 0.0866
+        }
+      },
+      "by_variant": {
+        "clean_png": {
+          "n": 30,
+          "cer": 0.0539,
+          "wer": 0.1323
+        },
+        "degraded_jpg": {
+          "n": 30,
+          "cer": 0.0425,
+          "wer": 0.1171
+        }
+      },
+      "by_kind": {
+        "chat": {
+          "n": 12,
+          "cer": 0.0456,
+          "wer": 0.1049
+        },
+        "error_screen": {
+          "n": 24,
+          "cer": 0.0693,
+          "wer": 0.1376
+        },
+        "review": {
+          "n": 24,
+          "cer": 0.0358,
+          "wer": 0.1234
+        }
+      },
+      "by_theme": {
+        "dark": {
+          "n": 30,
+          "cer": 0.0513,
+          "wer": 0.1413
+        },
+        "light": {
+          "n": 30,
+          "cer": 0.0452,
+          "wer": 0.1082
+        }
+      },
+      "by_font": {
+        "Arial": {
+          "n": 20,
+          "cer": 0.0346,
+          "wer": 0.0932
+        },
+        "Geeza Pro": {
+          "n": 20,
+          "cer": 0.0317,
+          "wer": 0.0742
+        },
+        "SF Arabic": {
+          "n": 20,
+          "cer": 0.0797,
+          "wer": 0.2138
+        }
+      },
+      "status_counts_text_images": {
+        "ok": 60,
+        "empty": 0,
+        "failed": 0
+      },
+      "no_text_images": {
+        "n": 4,
+        "returned_empty": 4,
+        "spurious_text": []
+      },
+      "cost": {
+        "engine": "paddleocr-3.7.0/ar",
+        "n_images": 64,
+        "engine_load_s": 10.46,
+        "latency_ms_mean": 6860.8,
+        "latency_ms_p50": 8614.8,
+        "latency_ms_max": 11485.0,
+        "peak_rss_mb": 12606.9,
+        "peak_rss_child_mb": 2.5,
+        "device": "CPU (Apple M2 Max)"
+      }
+    },
+    "tesseract": {
+      "engine": "tesseract-5.5.2/ara+eng/tessdata_best",
+      "all_text_images": {
+        "light": {
+          "n": 60,
+          "cer": 0.3458,
+          "wer": 0.3623
+        },
+        "letters": {
+          "n": 60,
+          "cer": 0.3435,
+          "wer": 0.355
+        }
+      },
+      "by_variant": {
+        "clean_png": {
+          "n": 30,
+          "cer": 0.3251,
+          "wer": 0.3362
+        },
+        "degraded_jpg": {
+          "n": 30,
+          "cer": 0.3665,
+          "wer": 0.3883
+        }
+      },
+      "by_kind": {
+        "chat": {
+          "n": 12,
+          "cer": 0.6663,
+          "wer": 0.679
+        },
+        "error_screen": {
+          "n": 24,
+          "cer": 0.274,
+          "wer": 0.3054
+        },
+        "review": {
+          "n": 24,
+          "cer": 0.2831,
+          "wer": 0.2879
+        }
+      },
+      "by_theme": {
+        "dark": {
+          "n": 30,
+          "cer": 0.323,
+          "wer": 0.3304
+        },
+        "light": {
+          "n": 30,
+          "cer": 0.3678,
+          "wer": 0.3939
+        }
+      },
+      "by_font": {
+        "Arial": {
+          "n": 20,
+          "cer": 0.3547,
+          "wer": 0.3634
+        },
+        "Geeza Pro": {
+          "n": 20,
+          "cer": 0.3264,
+          "wer": 0.3548
+        },
+        "SF Arabic": {
+          "n": 20,
+          "cer": 0.3569,
+          "wer": 0.369
+        }
+      },
+      "status_counts_text_images": {
+        "ok": 51,
+        "empty": 9,
+        "failed": 0
+      },
+      "no_text_images": {
+        "n": 4,
+        "returned_empty": 0,
+        "spurious_text": [
+          "را كما كما كراكما",
+          "* ok ok Kk Kk",
+          "را كما كما كراكما",
+          "* ok ok Kk Kk"
+        ]
+      },
+      "cost": {
+        "engine": "tesseract-5.5.2/ara+eng/tessdata_best",
+        "n_images": 64,
+        "engine_load_s": 0.02,
+        "latency_ms_mean": 291.8,
+        "latency_ms_p50": 276.9,
+        "latency_ms_max": 628.0,
+        "peak_rss_mb": 191.7,
+        "peak_rss_child_mb": 158.7,
+        "device": "CPU (Apple M2 Max)"
+      }
+    },
+    "vision": {
+      "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+      "all_text_images": {
+        "light": {
+          "n": 60,
+          "cer": 0.0021,
+          "wer": 0.0163
+        },
+        "letters": {
+          "n": 60,
+          "cer": 0.0004,
+          "wer": 0.0032
+        }
+      },
+      "by_variant": {
+        "clean_png": {
+          "n": 30,
+          "cer": 0.0012,
+          "wer": 0.0108
+        },
+        "degraded_jpg": {
+          "n": 30,
+          "cer": 0.0031,
+          "wer": 0.0217
+        }
+      },
+      "by_kind": {
+        "chat": {
+          "n": 12,
+          "cer": 0.0,
+          "wer": 0.0
+        },
+        "error_screen": {
+          "n": 24,
+          "cer": 0.0018,
+          "wer": 0.0101
+        },
+        "review": {
+          "n": 24,
+          "cer": 0.0031,
+          "wer": 0.026
+        }
+      },
+      "by_theme": {
+        "dark": {
+          "n": 30,
+          "cer": 0.0024,
+          "wer": 0.0174
+        },
+        "light": {
+          "n": 30,
+          "cer": 0.0019,
+          "wer": 0.0152
+        }
+      },
+      "by_font": {
+        "Arial": {
+          "n": 20,
+          "cer": 0.0012,
+          "wer": 0.0093
+        },
+        "Geeza Pro": {
+          "n": 20,
+          "cer": 0.0017,
+          "wer": 0.0129
+        },
+        "SF Arabic": {
+          "n": 20,
+          "cer": 0.0036,
+          "wer": 0.0276
+        }
+      },
+      "status_counts_text_images": {
+        "ok": 60,
+        "empty": 0,
+        "failed": 0
+      },
+      "no_text_images": {
+        "n": 4,
+        "returned_empty": 4,
+        "spurious_text": []
+      },
+      "cost": {
+        "engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+        "n_images": 64,
+        "engine_load_s": 0.32,
+        "latency_ms_mean": 128.1,
+        "latency_ms_p50": 124.2,
+        "latency_ms_max": 313.6,
+        "peak_rss_mb": 321.4,
+        "peak_rss_child_mb": 0.0,
+        "device": "CPU (Apple M2 Max)"
+      }
+    }
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "model_version": "a4-marbert-v1",
+  "ocr_engine": "apple-vision/macOS-27.0.1/ar-SA+en-US/accurate",
+  "warmup_s": 3.83,
+  "synthetic_images": 64,
+  "consistency_ocr_vs_reference_text": {
+    "clean_png": {
+      "n": 30,
+      "same_is_complaint": 1.0,
+      "same_category": 1.0,
+      "same_needs_review": 1.0,
+      "max_abs_diff_complaint_score": 0.0005
+    },
+    "degraded_jpg": {
+      "n": 30,
+      "same_is_complaint": 1.0,
+      "same_category": 1.0,
+      "same_needs_review": 1.0,
+      "max_abs_diff_complaint_score": 0.0008
+    }
+  },
+  "analysis_kind_by_screenshot_kind": {
+    "error_screen": {
+      "error_screen_signal": 24
+    },
+    "chat": {
+      "complaint": 12
+    },
+    "review": {
+      "not_complaint": 6,
+      "complaint": 16,
+      "error_screen_signal": 2
+    },
+    "no_text": {
+      "no_text": 4
+    }
+  },
+  "latency_ms": {
+    "ocr_ms": {
+      "mean": 102.2,
+      "p50": 103.6,
+      "p95": 118.0
+    },
+    "classify_ms": {
+      "mean": 33.6,
+      "p50": 31.8,
+      "p95": 39.7
+    },
+    "systems_ms": {
+      "mean": 0.2,
+      "p50": 0.23,
+      "p95": 0.42
+    },
+    "total_ms": {
+      "mean": 134.2,
+      "p50": 134.1,
+      "p95": 152.9
+    }
+  },
+  "peak_rss_mb": 1555.6,
+  "device": "CPU (Apple M2 Max)",
+  "error_screen_rule_on_real_reviews": {
+    "n_reviews": 2000,
+    "with_error_cue": 32,
+    "flagged_error_screen": 20,
+    "false_flag_rate": 0.01,
+    "false_flag_rate_among_cue_texts": 0.625,
+    "examples_flagged": [
+      "اكثر من مره حين حدوث خطأ كطلب ناقص يتم ارجاع المبلغ كرصيد فقط وليس نقدا وقيمة التوصيل لم تسترجع فعليك ان تطلب من حديد لتستخدم رصيد المحفظه وعليك ان تدفع مجددا قيمة توصيل جديده هذا ان اضافو المبلغ للمحفظه فاحيانا يتم اغلاق المذكره دون الرضا عن الحل مجرد وعد الكتروني اتوماتيكي وهمي واغلاق المذكره سيتم حذف التطبيق غير مأسوف عليه",
+      "التطبيق لا يعمل تسجل بياناتك ثم يقول لك لا يوجد اتصال او يعطيك خطا اتمنى تطوير التطبيق وعدم جعله منظر امام الناس فقط وفي الحقيقه لا فائده منه ابدا",
+      "يا جماعة لا استطيع مشاركه الفيديوهات مع الاصدقاء يقولون تعذر ارسال الرسالة لقد وضع هذا المستخدم قيود على المراسلة ارجوالرد",
+      "ياكرهيلكم احمله واحذفه احمله واحذفه احمله واحذفه ويقول المعلومات خطأ كولو تبن مع احترامي",
+      "التطبيق لا يعمل بسبب وجود خطأ في البرمجة ، تأتيك رسالة لتحديث التطبيق ولا توجد منه نسخة محدثة",
+      "تىنةارتاةالاتلتاىاالاغالابلل في هذا غزه في هذا المنتدى في اللغه الفرنسيه في اللغه العربيه للصف الاول متوسط الفصل الدراسي الاول لعام واحد في الاسبوع الماضي والحاضر والمستقبل القريب والبعيد الله يبارك خدمتك بصورة أفضل والتأكد من سلامة عن كل مواضيع جديده في قسم فساتيني الله وبركاته اليوم في هذا المنتدى الرائع في هذا غير صحيح هذا جدا في ض",
+      "الله يلعنكم يا عيال الكلب خسرت نت ب 30$ لكي اثبت اللعبه وفي الاخير قال تعذر تثبيتها لعنتي عليكم وعلى من صمم اللعبه",
+      "يا يطلعك برا او بكتب خطأ غير معروف"
+    ]
+  },
+  "scenarios": {
+    "arabic_text_auth": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9865,
+        "category": "AUTH",
+        "category_score": 0.9083,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "unknown",
+      "systems": [],
+      "possible": [],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "arabic_text_praise": {
+      "analysis_kind": "not_complaint",
+      "prediction": {
+        "is_complaint": false,
+        "complaint_score": 0.0574,
+        "category": null,
+        "category_score": null,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "unknown",
+      "systems": [],
+      "possible": [],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "mixed_ar_en": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9876,
+        "category": "AUTH",
+        "category_score": 0.9072,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "identified",
+      "systems": [
+        "absher"
+      ],
+      "possible": [],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "negated_problem": {
+      "analysis_kind": "not_complaint",
+      "prediction": {
+        "is_complaint": false,
+        "complaint_score": 0.0616,
+        "category": null,
+        "category_score": null,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "unknown",
+      "systems": [],
+      "possible": [],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "historical_resolved": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.7516,
+        "category": "AUTH",
+        "category_score": 0.6597,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "identified",
+      "systems": [
+        "sehhaty"
+      ],
+      "possible": [],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "ordinary_word_not_system": {
+      "analysis_kind": "not_complaint",
+      "prediction": {
+        "is_complaint": false,
+        "complaint_score": 0.0591,
+        "category": null,
+        "category_score": null,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "ambiguous",
+      "systems": [],
+      "possible": [
+        "absher"
+      ],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "unknown_system": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9816,
+        "category": "TRANS",
+        "category_score": 0.8908,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "unknown",
+      "systems": [],
+      "possible": [],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "multiple_systems": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9875,
+        "category": "AUTH",
+        "category_score": 0.8735,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "identified",
+      "systems": [
+        "najiz",
+        "nafath"
+      ],
+      "possible": [],
+      "ocr_status": null,
+      "error_cues": []
+    },
+    "error_screen_image_only": {
+      "analysis_kind": "error_screen_signal",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9787,
+        "category": "TRANS",
+        "category_score": 0.4085,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "ambiguous",
+      "systems": [],
+      "possible": [
+        "absher"
+      ],
+      "ocr_status": "ok",
+      "error_cues": [
+        "حدث خطا",
+        "عذرا",
+        "حدث خطا",
+        "يرجي المحاوله",
+        "رمز الخطا"
+      ]
+    },
+    "error_screen_with_user_text": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9835,
+        "category": "TRANS",
+        "category_score": 0.8677,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "ambiguous",
+      "systems": [],
+      "possible": [
+        "absher"
+      ],
+      "ocr_status": "ok",
+      "error_cues": [
+        "حدث خطا",
+        "عذرا",
+        "حدث خطا",
+        "يرجي المحاوله",
+        "رمز الخطا"
+      ]
+    },
+    "english_error_image": {
+      "analysis_kind": "error_screen_signal",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9855,
+        "category": "AVAIL",
+        "category_score": 0.8981,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "unknown",
+      "systems": [],
+      "possible": [],
+      "ocr_status": "ok",
+      "error_cues": [
+        "something went wrong",
+        "try again",
+        "error"
+      ]
+    },
+    "complaint_chat_image": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9755,
+        "category": "TRANS",
+        "category_score": 0.8956,
+        "needs_review": true,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "ambiguous",
+      "systems": [],
+      "possible": [
+        "absher"
+      ],
+      "ocr_status": "ok",
+      "error_cues": []
+    },
+    "degraded_jpeg_image": {
+      "analysis_kind": "complaint",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9869,
+        "category": "AUTH",
+        "category_score": 0.9096,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "ambiguous",
+      "systems": [],
+      "possible": [
+        "nafath",
+        "najiz",
+        "nafath"
+      ],
+      "ocr_status": "ok",
+      "error_cues": []
+    },
+    "no_text_image": {
+      "analysis_kind": "no_text",
+      "prediction": null,
+      "systems_status": null,
+      "systems": null,
+      "possible": null,
+      "ocr_status": "empty",
+      "error_cues": []
+    },
+    "corrupt_image": {
+      "analysis_kind": "ocr_failed",
+      "prediction": null,
+      "systems_status": null,
+      "systems": null,
+      "possible": null,
+      "ocr_status": "failed",
+      "error_cues": []
+    },
+    "unsupported_gif": {
+      "analysis_kind": "ocr_failed",
+      "prediction": null,
+      "systems_status": null,
+      "systems": null,
+      "possible": null,
+      "ocr_status": "failed",
+      "error_cues": []
+    },
+    "ocr_corrected_text": {
+      "analysis_kind": "error_screen_signal",
+      "prediction": {
+        "is_complaint": true,
+        "complaint_score": 0.9855,
+        "category": "AUTH",
+        "category_score": 0.906,
+        "needs_review": false,
+        "model_version": "a4-marbert-v1"
+      },
+      "systems_status": "identified",
+      "systems": [
+        "nafath"
+      ],
+      "possible": [],
+      "ocr_status": "ok",
+      "error_cues": [
+        "غير صحيح"
+      ]
+    }
+  }
+}

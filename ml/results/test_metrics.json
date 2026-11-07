@@ -1,0 +1,239 @@
+{
+  "model_version": "tfidf-baseline-v1",
+  "split_manifest_sha256": "451ab15d517fdc3c4e765acd17884c37434c1209abaeb7a0730258bca6dff4fd",
+  "gate": {
+    "n_test": 295,
+    "macro_f1": 0.8449,
+    "macro_f1_ci95": [
+      0.8012,
+      0.8836
+    ],
+    "dummy_macro_f1": 0.3629,
+    "delta_vs_dummy_ci95": [
+      0.4307,
+      0.5283
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.8727,
+        "recall": 0.8571,
+        "f1": 0.8649,
+        "support": 168
+      },
+      "1": {
+        "precision": 0.8154,
+        "recall": 0.8346,
+        "f1": 0.8249,
+        "support": 127
+      }
+    },
+    "confusion[ref x pred] (0=not,1=complaint)": [
+      [
+        144,
+        24
+      ],
+      [
+        21,
+        106
+      ]
+    ],
+    "auto_coverage": 0.8915,
+    "auto_accuracy": 0.8897,
+    "n_unclear_excluded": 6
+  },
+  "category": {
+    "n_test": 127,
+    "macro_f1": 0.5679,
+    "macro_f1_ci95": [
+      0.454,
+      0.6589
+    ],
+    "dummy_macro_f1": 0.0783,
+    "delta_vs_dummy_ci95": [
+      0.3736,
+      0.5801
+    ],
+    "accuracy": 0.6614,
+    "weighted_f1": 0.6492,
+    "per_class": {
+      "AUTH": {
+        "precision": 0.7857,
+        "recall": 0.7586,
+        "f1": 0.7719,
+        "support": 29
+      },
+      "AVAIL": {
+        "precision": 0.7857,
+        "recall": 0.8462,
+        "f1": 0.8148,
+        "support": 39
+      },
+      "OTHER": {
+        "precision": 0.5,
+        "recall": 0.5588,
+        "f1": 0.5278,
+        "support": 34
+      },
+      "PERF": {
+        "precision": 0.5556,
+        "recall": 0.8333,
+        "f1": 0.6667,
+        "support": 6
+      },
+      "TRANS": {
+        "precision": 0.3333,
+        "recall": 0.125,
+        "f1": 0.1818,
+        "support": 8
+      },
+      "UX": {
+        "precision": 0.5714,
+        "recall": 0.3636,
+        "f1": 0.4444,
+        "support": 11
+      }
+    },
+    "labels": [
+      "AUTH",
+      "AVAIL",
+      "OTHER",
+      "PERF",
+      "TRANS",
+      "UX"
+    ],
+    "confusion": [
+      [
+        22,
+        2,
+        4,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        33,
+        4,
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        6,
+        19,
+        3,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        6,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        4,
+        0,
+        0,
+        4
+      ]
+    ],
+    "auto_coverage": 0.1969,
+    "auto_accuracy": 0.96
+  },
+  "end_to_end": {
+    "n_test": 295,
+    "macro_f1": 0.5529,
+    "accuracy": 0.7356,
+    "per_class": {
+      "AUTH": {
+        "precision": 0.7692,
+        "recall": 0.6897,
+        "f1": 0.7273,
+        "support": 29
+      },
+      "AVAIL": {
+        "precision": 0.6818,
+        "recall": 0.7692,
+        "f1": 0.7229,
+        "support": 39
+      },
+      "OTHER": {
+        "precision": 0.3684,
+        "recall": 0.4118,
+        "f1": 0.3889,
+        "support": 34
+      },
+      "PERF": {
+        "precision": 0.625,
+        "recall": 0.8333,
+        "f1": 0.7143,
+        "support": 6
+      },
+      "TRANS": {
+        "precision": 0.25,
+        "recall": 0.125,
+        "f1": 0.1667,
+        "support": 8
+      },
+      "UX": {
+        "precision": 0.3,
+        "recall": 0.2727,
+        "f1": 0.2857,
+        "support": 11
+      },
+      "NO": {
+        "precision": 0.8727,
+        "recall": 0.8571,
+        "f1": 0.8649,
+        "support": 168
+      }
+    },
+    "needs_review_rate": 0.3797,
+    "accuracy_when_not_flagged": 0.8962
+  },
+  "external_aura_proxy": {
+    "all_domains": {
+      "n": 2604,
+      "agreement": 0.8356,
+      "kappa": 0.604,
+      "precision_vs_bug_report": 0.6539,
+      "recall_vs_bug_report": 0.7971,
+      "f1": 0.7184,
+      "predicted_complaint_rate_by_aura_label": {
+        "bug_report": 0.7971,
+        "improvement_request": 0.2594,
+        "others": 0.1412,
+        "rating": 0.1195
+      }
+    },
+    "non_game": {
+      "n": 1732,
+      "agreement": 0.8355,
+      "kappa": 0.6291,
+      "precision_vs_bug_report": 0.6751,
+      "recall_vs_bug_report": 0.8419,
+      "f1": 0.7493,
+      "predicted_complaint_rate_by_aura_label": {
+        "bug_report": 0.8419,
+        "improvement_request": 0.2944,
+        "others": 0.139,
+        "rating": 0.1338
+      }
+    }
+  },
+  "latency_ms_per_message_mean": 1.2
+}

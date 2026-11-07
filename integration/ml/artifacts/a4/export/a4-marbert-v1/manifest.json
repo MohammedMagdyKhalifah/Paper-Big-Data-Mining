@@ -1,0 +1,32 @@
+{
+  "model_version": "a4-marbert-v1",
+  "backend": "hf-7way",
+  "files": {
+    "model_dir": "model"
+  },
+  "categories": [
+    "AUTH",
+    "AVAIL",
+    "PERF",
+    "TRANS",
+    "UX",
+    "OTHER"
+  ],
+  "thresholds": {
+    "gate_decision": 0.5,
+    "gate_review_low": 0.5,
+    "gate_review_high": 0.5,
+    "category_review": 0.9,
+    "precision_target": 0.9
+  },
+  "selected_candidate": "E4_marbert_synth",
+  "artifact_run": "E4_marbert_synth_s42",
+  "created_utc": "2026-10-30T11:44:39+00:00",
+  "code_commit": "e643a583b0f7d1d0646816e6e2171fc86819412e",
+  "label_provenance": "AI-assisted reference labels (A4: sonnet+fable coders, opus adjudicator; v1: sonnet+haiku+sonnet). NOT human gold.",
+  "score_semantics": {
+    "complaint_score": "1 - P(NO) (hf-7way, temperature-scaled) or gate P(complaint) (sklearn)",
+    "category_score": "P(category | complaint)",
+    "needs_review": "gate score in [gate_review_low, gate_review_high) or category_score < category_review"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "sha256": "6719e22c9210186a7f9100f87e7f63d88bd2b8b57820e21d836896a744fd6a4a",
+  "counts": {
+    "train": 4884,
+    "holdout": 1240,
+    "val": 815,
+    "v1_test": 301,
+    "train_synthetic": 300
+  },
+  "by_label": {
+    "holdout": {
+      "AUTH": 104,
+      "AVAIL": 151,
+      "NO": 714,
+      "OTHER": 120,
+      "PERF": 14,
+      "TRANS": 50,
+      "UNCLEAR": 9,
+      "UX": 78
+    },
+    "train": {
+      "AUTH": 410,
+      "AVAIL": 488,
+      "NO": 2921,
+      "OTHER": 508,
+      "PERF": 48,
+      "TRANS": 205,
+      "UNCLEAR": 78,
+      "UX": 226
+    },
+    "train_synthetic": {
+      "AUTH": 14,
+      "AVAIL": 14,
+      "NO": 60,
+      "OTHER": 13,
+      "PERF": 13,
+      "TRANS": 103,
+      "UNCLEAR": 0,
+      "UX": 83
+    },
+    "v1_test": {
+      "AUTH": 29,
+      "AVAIL": 39,
+      "NO": 168,
+      "OTHER": 34,
+      "PERF": 6,
+      "TRANS": 8,
+      "UNCLEAR": 6,
+      "UX": 11
+    },
+    "val": {
+      "AUTH": 68,
+      "AVAIL": 82,
+      "NO": 487,
+      "OTHER": 85,
+      "PERF": 8,
+      "TRANS": 34,
+      "UNCLEAR": 14,
+      "UX": 37
+    }
+  }
+}

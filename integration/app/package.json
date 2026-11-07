@@ -1,0 +1,5 @@
+{
+  "name": "complaints-workspace",
+  "private": true,
+  "scripts": {"start": "node dev.mjs"}
+}

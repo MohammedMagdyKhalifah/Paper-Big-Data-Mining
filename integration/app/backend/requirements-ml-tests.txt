@@ -1,0 +1,9 @@
+# Optional: dependencies for running the unchanged ml/tests suite, not inference.
+-r requirements.lock
+-r requirements-ml.txt
+pandas==3.1.0
+pyarrow==26.0.0
+PyYAML==6.0.3
+python-dateutil==3.0.0
+six==1.17.0
+tzdata==2026.6

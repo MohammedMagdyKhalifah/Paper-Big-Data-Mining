@@ -1,0 +1,3 @@
+010bb935563698660e4a58d4a77588c661d498ada5c9f3dfddf072d5001d683b  artifacts/category.joblib
+c0844da1f95b638faedb7ba035dcaad42c0b83ac337e91d11543cb3ed3469e82  artifacts/gate.joblib
+bd80539ad9bfd76d2c725eeb1bb0f63eb392102e6292d6a14450cdedc74428ca  artifacts/manifest.json

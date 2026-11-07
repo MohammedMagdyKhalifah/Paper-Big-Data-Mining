@@ -1,0 +1,11 @@
+# Frozen label set (CLAUDE_CODE_ML_RESEARCH_PLAN.md §1, proposal Table 1).
+version: 1
+complaint_labels: [yes, no, unclear]
+categories:
+  AUTH:  "Authentication / account access / verification (login, OTP, Nafath, password, account locked)"
+  AVAIL: "Crash / service unavailable (app closes, won't open, server down, service stopped, error screen blocking use)"
+  PERF:  "Slowness / latency (slow loading, long waiting, lag, timeouts described as slowness)"
+  TRANS: "Payment / transaction failure (charged but not completed, payment fails, request/transaction not submitted or stuck)"
+  UX:    "Navigation / interface / usability (can't find a button, confusing design, layout, language, update made UI worse)"
+  OTHER: "Technical complaint that does not clearly fit the above (generic 'doesn't work', data wrong, notifications, location, etc.)"
+# OTHER is a content class. It is NOT 'not complaint' and NOT 'needs_review'.
